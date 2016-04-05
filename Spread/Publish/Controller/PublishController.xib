@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishController">
+            <connections>
+                <outlet property="SpreadBtn" destination="NVP-YV-ufo" id="bRu-jO-8uh"/>
+                <outlet property="iconImageView" destination="tsk-wb-WUg" id="Sdb-dZ-RgN"/>
+                <outlet property="nickNameFD" destination="HPq-Ai-GcA" id="eUr-tr-gcb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qinaideNizaina.png" translatesAutoresizingMaskIntoConstraints="NO" id="x6g-eg-0Ce">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扩散" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yS9-30-jnV">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="1IM-dr-YKf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1IM-dr-YKf"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1IM-dr-YKf"/>
+                        </mask>
+                    </variation>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="要寻找的孩子昵称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Xj-nY-cvm">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="QRa-PX-htO"/>
+                        <constraint firstAttribute="width" constant="117" id="kKa-Yp-cZb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="QRa-PX-htO"/>
+                            <exclude reference="kKa-Yp-cZb"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="QRa-PX-htO"/>
+                            <include reference="kKa-Yp-cZb"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HPq-Ai-GcA" userLabel="nickNameFD">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Y0N-51-goN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Y0N-51-goN"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Y0N-51-goN"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7q-Ws-L0U" userLabel="backBtn">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" image="undo-yellow"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="12" width="48" height="48"/>
+                    </variation>
+                    <connections>
+                        <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="jlb-Iz-dv6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVP-YV-ufo" userLabel="SpreadBtn">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="N7r-ED-YNR"/>
+                        <constraint firstAttribute="width" constant="96" id="xPO-uk-vZc"/>
+                    </constraints>
+                    <state key="normal" title="扩散">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="N7r-ED-YNR"/>
+                            <exclude reference="xPO-uk-vZc"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="N7r-ED-YNR"/>
+                            <include reference="xPO-uk-vZc"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="SpreadBtnClick:" destination="-1" eventType="touchUpInside" id="MGu-F8-xUQ"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="邱_生活.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-wb-WUg" userLabel="iconImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="228" id="h1D-sV-0a1"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="h1D-sV-0a1"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="h1D-sV-0a1"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yS9-30-jnV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="3Ud-ui-GUv"/>
+                <constraint firstAttribute="trailing" secondItem="yS9-30-jnV" secondAttribute="trailing" constant="8" id="4mv-dM-sem"/>
+                <constraint firstAttribute="trailing" secondItem="NVP-YV-ufo" secondAttribute="trailing" constant="51" id="6TN-mu-eZe"/>
+                <constraint firstItem="x6g-eg-0Ce" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GHx-tf-qTC"/>
+                <constraint firstItem="yS9-30-jnV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="GkN-cd-BFx"/>
+                <constraint firstItem="HPq-Ai-GcA" firstAttribute="leading" secondItem="4Xj-nY-cvm" secondAttribute="trailing" constant="8" id="Nw0-BM-2i6"/>
+                <constraint firstItem="NVP-YV-ufo" firstAttribute="top" secondItem="HPq-Ai-GcA" secondAttribute="bottom" constant="49" id="PoM-2z-nh0"/>
+                <constraint firstAttribute="trailing" secondItem="HPq-Ai-GcA" secondAttribute="trailing" constant="51" id="TeV-Rf-bW7"/>
+                <constraint firstItem="4Xj-nY-cvm" firstAttribute="top" secondItem="yS9-30-jnV" secondAttribute="bottom" constant="61" id="W4R-eK-bw9"/>
+                <constraint firstItem="x6g-eg-0Ce" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cyR-od-eGr"/>
+                <constraint firstItem="HPq-Ai-GcA" firstAttribute="top" secondItem="yS9-30-jnV" secondAttribute="bottom" constant="66" id="gTY-ui-1Ae"/>
+                <constraint firstAttribute="trailing" secondItem="tsk-wb-WUg" secondAttribute="trailing" constant="89" id="jYv-Mb-hwL"/>
+                <constraint firstItem="4Xj-nY-cvm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="jjU-MN-xfe"/>
+                <constraint firstAttribute="bottom" secondItem="tsk-wb-WUg" secondAttribute="bottom" constant="62" id="lwL-gV-pO0"/>
+                <constraint firstAttribute="trailing" secondItem="x6g-eg-0Ce" secondAttribute="trailing" id="lxc-op-8ra"/>
+                <constraint firstAttribute="bottom" secondItem="x6g-eg-0Ce" secondAttribute="bottom" id="mZG-Zh-qqF"/>
+                <constraint firstItem="tsk-wb-WUg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="89" id="qW8-jZ-CgZ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="x6g-eg-0Ce"/>
+                    <exclude reference="yS9-30-jnV"/>
+                    <exclude reference="4Xj-nY-cvm"/>
+                    <exclude reference="HPq-Ai-GcA"/>
+                    <exclude reference="L7q-Ws-L0U"/>
+                    <exclude reference="NVP-YV-ufo"/>
+                    <exclude reference="tsk-wb-WUg"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="GHx-tf-qTC"/>
+                    <exclude reference="cyR-od-eGr"/>
+                    <exclude reference="lxc-op-8ra"/>
+                    <exclude reference="mZG-Zh-qqF"/>
+                    <exclude reference="3Ud-ui-GUv"/>
+                    <exclude reference="4mv-dM-sem"/>
+                    <exclude reference="GkN-cd-BFx"/>
+                    <exclude reference="W4R-eK-bw9"/>
+                    <exclude reference="jjU-MN-xfe"/>
+                    <exclude reference="Nw0-BM-2i6"/>
+                    <exclude reference="TeV-Rf-bW7"/>
+                    <exclude reference="gTY-ui-1Ae"/>
+                    <exclude reference="6TN-mu-eZe"/>
+                    <exclude reference="PoM-2z-nh0"/>
+                    <exclude reference="jYv-Mb-hwL"/>
+                    <exclude reference="lwL-gV-pO0"/>
+                    <exclude reference="qW8-jZ-CgZ"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="x6g-eg-0Ce"/>
+                    <include reference="yS9-30-jnV"/>
+                    <include reference="4Xj-nY-cvm"/>
+                    <include reference="HPq-Ai-GcA"/>
+                    <include reference="L7q-Ws-L0U"/>
+                    <include reference="NVP-YV-ufo"/>
+                    <include reference="tsk-wb-WUg"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="GHx-tf-qTC"/>
+                    <include reference="cyR-od-eGr"/>
+                    <include reference="lxc-op-8ra"/>
+                    <include reference="mZG-Zh-qqF"/>
+                    <include reference="3Ud-ui-GUv"/>
+                    <include reference="4mv-dM-sem"/>
+                    <include reference="GkN-cd-BFx"/>
+                    <include reference="W4R-eK-bw9"/>
+                    <include reference="jjU-MN-xfe"/>
+                    <include reference="Nw0-BM-2i6"/>
+                    <include reference="TeV-Rf-bW7"/>
+                    <include reference="gTY-ui-1Ae"/>
+                    <include reference="6TN-mu-eZe"/>
+                    <include reference="PoM-2z-nh0"/>
+                    <include reference="jYv-Mb-hwL"/>
+                    <include reference="lwL-gV-pO0"/>
+                    <include reference="qW8-jZ-CgZ"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="268.5" y="271.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="qinaideNizaina.png" width="375" height="667"/>
+        <image name="undo-yellow" width="32" height="32"/>
+        <image name="邱_生活.JPG" width="960" height="1280"/>
+    </resources>
+</document>

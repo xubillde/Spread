@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchPersonController">
+            <connections>
+                <outlet property="nickNameFD" destination="k2U-Hh-kdM" id="QUQ-1Y-tcY"/>
+                <outlet property="searchBtn" destination="hnr-Ci-uIa" id="lpn-vg-xDg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SearchImage0.png" translatesAutoresizingMaskIntoConstraints="NO" id="inT-2W-u4b">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您要找孩子的昵称" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJR-tf-y0k" userLabel="nickName">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="5WZ-t4-6My"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="5WZ-t4-6My"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="5WZ-t4-6My"/>
+                        </mask>
+                    </variation>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k2U-Hh-kdM" userLabel="nickNameFD">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="X0e-eh-9Gg"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="X0e-eh-9Gg"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <mask key="constraints">
+                            <include reference="X0e-eh-9Gg"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnr-Ci-uIa" userLabel="searchBtn">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.66613685344827589" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="RME-eK-eCU"/>
+                    </constraints>
+                    <state key="normal" title="搜寻轨迹">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="RME-eK-eCU"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="RME-eK-eCU"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="searchPersonClick:" destination="-1" eventType="touchUpInside" id="d6w-xg-gdv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dA5-0B-UAq" userLabel="cacelBtn">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" image="undo-yellow">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="15" width="54" height="43"/>
+                    </variation>
+                    <connections>
+                        <action selector="cacelBtnClick:" destination="-1" eventType="touchUpInside" id="N7k-sN-h9E"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="inT-2W-u4b" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ADf-l5-tfV"/>
+                <constraint firstItem="hnr-Ci-uIa" firstAttribute="top" secondItem="k2U-Hh-kdM" secondAttribute="bottom" constant="39" id="HeH-pC-XT0"/>
+                <constraint firstAttribute="bottom" secondItem="hnr-Ci-uIa" secondAttribute="bottom" constant="220" id="U3b-TW-aqc"/>
+                <constraint firstAttribute="trailing" secondItem="inT-2W-u4b" secondAttribute="trailing" id="YfM-pi-6ES"/>
+                <constraint firstItem="k2U-Hh-kdM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="h3G-Ln-dDg"/>
+                <constraint firstItem="inT-2W-u4b" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="-58" id="iIb-2U-GDA"/>
+                <constraint firstAttribute="trailing" secondItem="k2U-Hh-kdM" secondAttribute="trailing" constant="89" id="imv-0x-Vqj"/>
+                <constraint firstAttribute="trailing" secondItem="hnr-Ci-uIa" secondAttribute="trailing" constant="89" id="j3d-R9-M4s"/>
+                <constraint firstItem="yJR-tf-y0k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="m1m-jL-Gkn"/>
+                <constraint firstAttribute="bottom" secondItem="inT-2W-u4b" secondAttribute="bottom" id="rvO-Yh-rWG"/>
+                <constraint firstItem="hnr-Ci-uIa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="88" id="uvt-e5-b9w"/>
+                <constraint firstItem="k2U-Hh-kdM" firstAttribute="top" secondItem="yJR-tf-y0k" secondAttribute="bottom" constant="1" id="vi3-Ae-DwY"/>
+                <constraint firstAttribute="trailing" secondItem="yJR-tf-y0k" secondAttribute="trailing" id="woy-os-vt0"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="inT-2W-u4b"/>
+                    <exclude reference="yJR-tf-y0k"/>
+                    <exclude reference="k2U-Hh-kdM"/>
+                    <exclude reference="hnr-Ci-uIa"/>
+                    <exclude reference="dA5-0B-UAq"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="ADf-l5-tfV"/>
+                    <exclude reference="YfM-pi-6ES"/>
+                    <exclude reference="iIb-2U-GDA"/>
+                    <exclude reference="rvO-Yh-rWG"/>
+                    <exclude reference="m1m-jL-Gkn"/>
+                    <exclude reference="woy-os-vt0"/>
+                    <exclude reference="h3G-Ln-dDg"/>
+                    <exclude reference="imv-0x-Vqj"/>
+                    <exclude reference="vi3-Ae-DwY"/>
+                    <exclude reference="HeH-pC-XT0"/>
+                    <exclude reference="U3b-TW-aqc"/>
+                    <exclude reference="j3d-R9-M4s"/>
+                    <exclude reference="uvt-e5-b9w"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="inT-2W-u4b"/>
+                    <include reference="yJR-tf-y0k"/>
+                    <include reference="k2U-Hh-kdM"/>
+                    <include reference="hnr-Ci-uIa"/>
+                    <include reference="dA5-0B-UAq"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="ADf-l5-tfV"/>
+                    <include reference="YfM-pi-6ES"/>
+                    <include reference="iIb-2U-GDA"/>
+                    <include reference="rvO-Yh-rWG"/>
+                    <include reference="m1m-jL-Gkn"/>
+                    <include reference="woy-os-vt0"/>
+                    <include reference="h3G-Ln-dDg"/>
+                    <include reference="imv-0x-Vqj"/>
+                    <include reference="vi3-Ae-DwY"/>
+                    <include reference="HeH-pC-XT0"/>
+                    <include reference="U3b-TW-aqc"/>
+                    <include reference="j3d-R9-M4s"/>
+                    <include reference="uvt-e5-b9w"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="SearchImage0.png" width="640" height="960"/>
+        <image name="undo-yellow" width="32" height="32"/>
+    </resources>
+</document>

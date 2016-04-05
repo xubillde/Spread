@@ -1,0 +1,75 @@
+//
+//  SpreadPCH.pch
+//  Spread
+//
+//  Created by qiuxuewei on 16/3/21.
+//  Copyright © 2016年 邱学伟. All rights reserved.
+//
+
+#ifndef SpreadPCH_pch
+#define SpreadPCH_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/** 导入工具类 */
+#import "UIViewExt.h"
+
+/** 获取当前语言 */
+#define LanguageIsEnglish ([CURR_LANG isEqualToString:@"en-US"] || [CURR_LANG isEqualToString:@"en-CA"] || [CURR_LANG isEqualToString:@"en-GB"] || [CURR_LANG isEqualToString:@"en-CN"] || [CURR_LANG isEqualToString:@"en"])
+
+
+/** 尺寸宏 */
+//适配比例
+#define kFitSize 0.9
+
+//屏幕尺寸
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//占屏幕百分比
+#define RectWithWidth(w) kScreenWidth * w
+#define RectWithHeight(h) kScreenHeight * h
+
+//传入x,y,w,h所占屏幕宽高的百分比得到控件frame
+#define RectMakeWithPercent(xPercent,yPercent,wPercent,hPercent) CGRectMake(RectWithWidth(xPercent), RectWithHeight(yPercent), RectWithWidth(wPercent), RectWithHeight(hPercent))
+
+/** 视图宏 */
+#define kAlertWithMsg(MSG) ([[[UIAlertView alloc] initWithTitle:@"提示" message:MSG delegate:nil cancelButtonTitle:@"确认" otherButtonTitles:nil] show])
+
+#define kUIApplication [UIApplication sharedApplication]
+
+
+
+/** 线程 */
+#define kMainQueue  dispatch_get_main_queue()
+#define kGlobalQueue  dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+
+//自定义颜色rgb
+#define ColorWithRGB(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0] //<<< 用10进制表示颜色，例如（255,255,255）黑色
+//自定义颜色rgba
+#define ColorWithRGBA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/1.0] //<<< 用10进制表示颜色，例如（255,255,255）黑色
+
+//随机颜色
+#define ColorRandom ColorWithRGB(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+/** 颜色宏 */
+//车次蓝
+#define kStationBlue colorWithRGBA(113, 163, 227, 0.9)
+
+//背景白色
+#define kBackgroundWhiteColor [UIColor colorWithRed:247.0f green:245.0f blue:248.0f alpha:1.0]
+
+//传入RGBA返回颜色
+#define colorWithRGBA(R,G,B,A) [UIColor colorWithRed:R/255.0f green:G/255.0F blue:B/255.0 alpha:A/1.0]
+
+//按钮字体颜色
+#define kBtnTitleColor colorWithRGBA(60, 57, 61, 1)
+
+//字体颜色
+#define kTextColor colorWithRGBA(175, 181, 196, 1)
+
+
+
+
+#endif /* SpreadPCH_pch */
