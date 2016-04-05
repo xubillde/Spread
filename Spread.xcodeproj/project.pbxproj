@@ -111,6 +111,7 @@
 		2E6F24701CA760C30032D246 /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6F246F1CA760C30032D246 /* PeripheralInfo.m */; };
 		2E824D6F1CAA534B00C5B668 /* XWAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E824D6E1CAA534B00C5B668 /* XWAlertController.m */; };
 		2E824D721CAA650C00C5B668 /* UIView+CurrentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E824D711CAA650B00C5B668 /* UIView+CurrentController.m */; };
+		2E9092E61CB3BC9F007FE517 /* DiscoverMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */; };
 		2E91F1A21CA0F29800AFC942 /* XWCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E91F1A11CA0F29800AFC942 /* XWCardView.m */; };
 		2EA75AB01CA4ADB900803638 /* XWRadarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA75AAB1CA4ADB900803638 /* XWRadarIndicatorView.m */; };
 		2EA75AB11CA4ADB900803638 /* XWRadarPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA75AAD1CA4ADB900803638 /* XWRadarPointView.m */; };
@@ -361,6 +362,8 @@
 		2E824D6E1CAA534B00C5B668 /* XWAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWAlertController.m; sourceTree = "<group>"; };
 		2E824D701CAA650B00C5B668 /* UIView+CurrentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CurrentController.h"; sourceTree = "<group>"; };
 		2E824D711CAA650B00C5B668 /* UIView+CurrentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CurrentController.m"; sourceTree = "<group>"; };
+		2E9092E41CB3BC9F007FE517 /* DiscoverMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverMainController.h; sourceTree = "<group>"; };
+		2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverMainController.m; sourceTree = "<group>"; };
 		2E91F1A01CA0F29800AFC942 /* XWCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCardView.h; sourceTree = "<group>"; };
 		2E91F1A11CA0F29800AFC942 /* XWCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCardView.m; sourceTree = "<group>"; };
 		2EA75AAA1CA4ADB900803638 /* XWRadarIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWRadarIndicatorView.h; sourceTree = "<group>"; };
@@ -958,6 +961,39 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		2E9092E01CB3BB9F007FE517 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2E9092E11CB3BB9F007FE517 /* Controller */,
+				2E9092E21CB3BB9F007FE517 /* Model */,
+				2E9092E31CB3BB9F007FE517 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2E9092E11CB3BB9F007FE517 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E9092E41CB3BC9F007FE517 /* DiscoverMainController.h */,
+				2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E9092E21CB3BB9F007FE517 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2E9092E31CB3BB9F007FE517 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2EA75AA81CA4ADB900803638 /* XWAnnotation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1014,6 +1050,7 @@
 		2EAC85281C9F90100044CAF6 /* Spread */ = {
 			isa = PBXGroup;
 			children = (
+				2E9092E01CB3BB9F007FE517 /* Discover */,
 				2E3B946F1CA1471700DE1B79 /* RadarScan */,
 				2E3B943B1CA1185C00DE1B79 /* Locus */,
 				2EBB4E321CA0E56700889732 /* Images */,
@@ -1497,6 +1534,7 @@
 				2E17023D1C9FEF9600564C89 /* AFHTTPSessionManager.m in Sources */,
 				2E1701C31C9FE9AF00564C89 /* DefaultDirectionInterpretor.m in Sources */,
 				2E1702271C9FEF0500564C89 /* JokeImageData.m in Sources */,
+				2E9092E61CB3BC9F007FE517 /* DiscoverMainController.m in Sources */,
 				2EAC85621C9F96370044CAF6 /* ChattingController.m in Sources */,
 				2ECC386F1CA96E8F00FFFDAA /* AboutSelfController.m in Sources */,
 				2EAC85471C9F92620044CAF6 /* AppDelegate.m in Sources */,
