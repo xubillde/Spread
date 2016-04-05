@@ -8,9 +8,10 @@
 
 #import "DiscoverMainController.h"
 #import "MJRefresh.h"
+#import <UIImageView+AFNetworking.h>
 
 
-@interface DiscoverMainController ()
+@interface DiscoverMainController ()<UITableViewDataSource,UITabBarDelegate>
 
 //数据数组
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -62,6 +63,27 @@
     NSLog(@"上拉刷新");
     
 }
+
+#pragma mark - UITableViewDataSource UITabBarDelegate 方法->
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+//初始化cell
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    //初始化cell数据!
+    
+    
+    return cell;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
