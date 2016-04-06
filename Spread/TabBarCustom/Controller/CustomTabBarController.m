@@ -20,6 +20,7 @@
 #import "RadarController.h"
 
 #import "XWMenuPopView.h"
+#import "DiscoverMainController.h"
 
 
 @interface CustomTabBarController ()<MenuPopDelegate>{
@@ -42,6 +43,8 @@
 /** 个人信息视图 */
 @property (nonatomic, strong) PersonController *personVC;
 
+/** 发现页 */
+@property (nonatomic, strong) DiscoverMainController *discoverMainVC;
 
 //@property (nonatomic, strong) XWMenuPopView *menuPopView;
 
@@ -99,6 +102,12 @@ static id _instance;
         _personVC = [[PersonController alloc] init];
     }
     return _personVC;
+}
+-(DiscoverMainController *)discoverMainVC{
+    if (_discoverMainVC == nil) {
+        _discoverMainVC = [[DiscoverMainController alloc] init];
+    }
+    return _discoverMainVC;
 }
 #pragma mark - 视图
 - (void)viewDidLoad {
@@ -162,18 +171,18 @@ static id _instance;
         //设置顶部title
         [self.radarVC.tabBarItem setTitle:@"搜索"];
         [self.rankingVC.tabBarItem setTitle:@"寻人"];
-        [self.locusVC.tabBarItem setTitle:@"轨迹"];
+        [self.discoverMainVC.tabBarItem setTitle:@"发现"];
         [self.personVC.tabBarItem setTitle:@"个人信息"];
         
         [self.radarVC.navigationItem setTitle:@"搜寻附近迷失的孩子"];
         [self.rankingVC.navigationItem setTitle:@"寻人热度排行"];
-        [self.locusVC.navigationItem setTitle:@"寻找迷失孩子的轨迹"];
+        [self.discoverMainVC.navigationItem setTitle:@"发现"];
         [self.personVC.navigationItem setTitle:@"个人信息"];
         
         //设置图片
         [self.radarVC.tabBarItem setImage:[UIImage imageNamed:@"home_normal"]];
         [self.rankingVC.tabBarItem setImage:[UIImage imageNamed:@"mycity_normal"]];
-        [self.locusVC.tabBarItem setImage:[UIImage imageNamed:@"message_normal"]];
+        [self.discoverMainVC.tabBarItem setImage:[UIImage imageNamed:@"message_normal"]];
         [self.personVC.tabBarItem setImage:[UIImage imageNamed:@"account_normal"]];
         
         //设置高亮图片
@@ -188,7 +197,7 @@ static id _instance;
         
         UIImage *chattingVCSelectedImage = [UIImage imageNamed:@"message_highlight"];
         chattingVCSelectedImage = [chattingVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        self.locusVC.tabBarItem.selectedImage = chattingVCSelectedImage;
+        self.discoverMainVC.tabBarItem.selectedImage = chattingVCSelectedImage;
         
         UIImage *personVCSelectedImage = [UIImage imageNamed:@"account_highlight"];
         personVCSelectedImage = [personVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -197,10 +206,10 @@ static id _instance;
         //使用navigation容器
         UINavigationController *radarNav = [[UINavigationController alloc] initWithRootViewController:self.radarVC];
         UINavigationController *rankingNav = [[UINavigationController alloc] initWithRootViewController:self.rankingVC];
-        UINavigationController *chattingNav = [[UINavigationController alloc] initWithRootViewController:self.locusVC];
+        UINavigationController *discoverMainNav = [[UINavigationController alloc] initWithRootViewController:self.discoverMainVC];
         UINavigationController *personNav = [[UINavigationController alloc] initWithRootViewController:self.personVC];
         
-        self.viewControllers = @[radarNav,rankingNav,chattingNav,personNav];
+        self.viewControllers = @[radarNav,rankingNav,discoverMainNav,personNav];
     });
     
     
