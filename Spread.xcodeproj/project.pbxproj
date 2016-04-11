@@ -134,17 +134,11 @@
 		2EAC858A1C9FA1C80044CAF6 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC85891C9FA1C80044CAF6 /* CustomTabBarController.m */; };
 		2EAC85901C9FC1360044CAF6 /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC858F1C9FC1360044CAF6 /* CustomTabBar.m */; };
 		2EAC85931C9FC1BE0044CAF6 /* CustomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAC85921C9FC1BE0044CAF6 /* CustomTabBarButton.m */; };
-		2EB043A21CB49E0400F55543 /* JPDiscoverBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0438F1CB49E0400F55543 /* JPDiscoverBaseTableViewCell.m */; };
-		2EB043A31CB49E0400F55543 /* JPDiscoverCellBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043911CB49E0400F55543 /* JPDiscoverCellBaseModule.m */; };
-		2EB043A41CB49E0400F55543 /* JPDiscoverCellCommentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043931CB49E0400F55543 /* JPDiscoverCellCommentModule.m */; };
-		2EB043A51CB49E0400F55543 /* JPDiscoverCellContentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043951CB49E0400F55543 /* JPDiscoverCellContentModule.m */; };
-		2EB043A61CB49E0400F55543 /* JPDiscoverCellImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043971CB49E0400F55543 /* JPDiscoverCellImageModule.m */; };
-		2EB043A71CB49E0400F55543 /* JPDiscoverCellShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043991CB49E0400F55543 /* JPDiscoverCellShareModule.m */; };
-		2EB043A81CB49E0400F55543 /* JPDiscoverCellTitleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0439B1CB49E0400F55543 /* JPDiscoverCellTitleModule.m */; };
-		2EB043A91CB49E0400F55543 /* JPDiscoverCellVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0439D1CB49E0400F55543 /* JPDiscoverCellVideoModule.m */; };
-		2EB043AA1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB0439F1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.m */; };
-		2EB043AB1CB49E0400F55543 /* JPDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043A11CB49E0400F55543 /* JPDiscoverModel.m */; };
 		2EB043AD1CB4A22F00F55543 /* icon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB043AC1CB4A22F00F55543 /* icon.ttf */; };
+		2EB043B81CB4EE5000F55543 /* XWDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043B71CB4EE5000F55543 /* XWDiscoverModel.m */; };
+		2EB043BB1CB5175B00F55543 /* XWDiscoverBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043BA1CB5175B00F55543 /* XWDiscoverBaseCell.m */; };
+		2EB043BE1CB5F70300F55543 /* XWDiscoverCellBaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043BD1CB5F70300F55543 /* XWDiscoverCellBaseModule.m */; };
+		2EB043C11CB5FCCA00F55543 /* XWDiscoverCellImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB043C01CB5FCCA00F55543 /* XWDiscoverCellImageModule.m */; };
 		2EBB4E371CA0E56700889732 /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EBB4E331CA0E56700889732 /* Back.png */; };
 		2EBB4E381CA0E56700889732 /* earthGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2EBB4E341CA0E56700889732 /* earthGif.gif */; };
 		2EBB4E391CA0E56700889732 /* huaban.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EBB4E351CA0E56700889732 /* huaban.png */; };
@@ -160,6 +154,12 @@
 		2ECC38761CAA2A7E00FFFDAA /* UserInfoController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECC38741CAA2A7E00FFFDAA /* UserInfoController.xib */; };
 		2ECC387A1CAA2F7200FFFDAA /* UserInfoIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECC38781CAA2F7200FFFDAA /* UserInfoIconCell.m */; };
 		2ECC387B1CAA2F7200FFFDAA /* UserInfoIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ECC38791CAA2F7200FFFDAA /* UserInfoIconCell.xib */; };
+		2EE61C8D1CB65C2B009C2219 /* XWDiscoverFullStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61C8C1CB65C2B009C2219 /* XWDiscoverFullStyleCell.m */; };
+		2EE61C951CB74606009C2219 /* XWDiscoverCellTitleModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61C941CB74606009C2219 /* XWDiscoverCellTitleModule.m */; };
+		2EE61C981CB74669009C2219 /* XWDiscoverCellContentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61C971CB74669009C2219 /* XWDiscoverCellContentModule.m */; };
+		2EE61C9B1CB74FD9009C2219 /* XWDiscoverCellShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61C9A1CB74FD9009C2219 /* XWDiscoverCellShareModule.m */; };
+		2EE61C9E1CB78278009C2219 /* XWDiscoverCellVideoModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61C9D1CB78278009C2219 /* XWDiscoverCellVideoModule.m */; };
+		2EE61CA11CB78ECC009C2219 /* XWDiscoverCellCommentModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE61CA01CB78ECC009C2219 /* XWDiscoverCellCommentModule.m */; };
 		2EEDC34D1CAB877E00838882 /* XWMenuPopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDC34C1CAB877E00838882 /* XWMenuPopView.m */; };
 		2EEDC3571CAB8AB200838882 /* button-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEDC34F1CAB8AB200838882 /* button-chat.png */; };
 		2EEDC3581CAB8AB200838882 /* button-chat@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EEDC3501CAB8AB200838882 /* button-chat@2x.png */; };
@@ -406,27 +406,15 @@
 		2EAC858F1C9FC1360044CAF6 /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		2EAC85911C9FC1BE0044CAF6 /* CustomTabBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarButton.h; sourceTree = "<group>"; };
 		2EAC85921C9FC1BE0044CAF6 /* CustomTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarButton.m; sourceTree = "<group>"; };
-		2EB0438E1CB49E0400F55543 /* JPDiscoverBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverBaseTableViewCell.h; sourceTree = "<group>"; };
-		2EB0438F1CB49E0400F55543 /* JPDiscoverBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverBaseTableViewCell.m; sourceTree = "<group>"; };
-		2EB043901CB49E0400F55543 /* JPDiscoverCellBaseModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellBaseModule.h; sourceTree = "<group>"; };
-		2EB043911CB49E0400F55543 /* JPDiscoverCellBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellBaseModule.m; sourceTree = "<group>"; };
-		2EB043921CB49E0400F55543 /* JPDiscoverCellCommentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellCommentModule.h; sourceTree = "<group>"; };
-		2EB043931CB49E0400F55543 /* JPDiscoverCellCommentModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellCommentModule.m; sourceTree = "<group>"; };
-		2EB043941CB49E0400F55543 /* JPDiscoverCellContentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellContentModule.h; sourceTree = "<group>"; };
-		2EB043951CB49E0400F55543 /* JPDiscoverCellContentModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellContentModule.m; sourceTree = "<group>"; };
-		2EB043961CB49E0400F55543 /* JPDiscoverCellImageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellImageModule.h; sourceTree = "<group>"; };
-		2EB043971CB49E0400F55543 /* JPDiscoverCellImageModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellImageModule.m; sourceTree = "<group>"; };
-		2EB043981CB49E0400F55543 /* JPDiscoverCellShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellShareModule.h; sourceTree = "<group>"; };
-		2EB043991CB49E0400F55543 /* JPDiscoverCellShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellShareModule.m; sourceTree = "<group>"; };
-		2EB0439A1CB49E0400F55543 /* JPDiscoverCellTitleModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellTitleModule.h; sourceTree = "<group>"; };
-		2EB0439B1CB49E0400F55543 /* JPDiscoverCellTitleModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellTitleModule.m; sourceTree = "<group>"; };
-		2EB0439C1CB49E0400F55543 /* JPDiscoverCellVideoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverCellVideoModule.h; sourceTree = "<group>"; };
-		2EB0439D1CB49E0400F55543 /* JPDiscoverCellVideoModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverCellVideoModule.m; sourceTree = "<group>"; };
-		2EB0439E1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverFullStyleTableViewCell.h; sourceTree = "<group>"; };
-		2EB0439F1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverFullStyleTableViewCell.m; sourceTree = "<group>"; };
-		2EB043A01CB49E0400F55543 /* JPDiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPDiscoverModel.h; sourceTree = "<group>"; };
-		2EB043A11CB49E0400F55543 /* JPDiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPDiscoverModel.m; sourceTree = "<group>"; };
 		2EB043AC1CB4A22F00F55543 /* icon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = icon.ttf; sourceTree = "<group>"; };
+		2EB043B61CB4EE5000F55543 /* XWDiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverModel.h; sourceTree = "<group>"; };
+		2EB043B71CB4EE5000F55543 /* XWDiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverModel.m; sourceTree = "<group>"; };
+		2EB043B91CB5175B00F55543 /* XWDiscoverBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverBaseCell.h; sourceTree = "<group>"; };
+		2EB043BA1CB5175B00F55543 /* XWDiscoverBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverBaseCell.m; sourceTree = "<group>"; };
+		2EB043BC1CB5F70300F55543 /* XWDiscoverCellBaseModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellBaseModule.h; sourceTree = "<group>"; };
+		2EB043BD1CB5F70300F55543 /* XWDiscoverCellBaseModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellBaseModule.m; sourceTree = "<group>"; };
+		2EB043BF1CB5FCCA00F55543 /* XWDiscoverCellImageModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellImageModule.h; sourceTree = "<group>"; };
+		2EB043C01CB5FCCA00F55543 /* XWDiscoverCellImageModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellImageModule.m; sourceTree = "<group>"; };
 		2EBB4E331CA0E56700889732 /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
 		2EBB4E341CA0E56700889732 /* earthGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = earthGif.gif; sourceTree = "<group>"; };
 		2EBB4E351CA0E56700889732 /* huaban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = huaban.png; sourceTree = "<group>"; };
@@ -449,6 +437,18 @@
 		2ECC38771CAA2F7200FFFDAA /* UserInfoIconCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoIconCell.h; sourceTree = "<group>"; };
 		2ECC38781CAA2F7200FFFDAA /* UserInfoIconCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconCell.m; sourceTree = "<group>"; };
 		2ECC38791CAA2F7200FFFDAA /* UserInfoIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserInfoIconCell.xib; sourceTree = "<group>"; };
+		2EE61C8B1CB65C2B009C2219 /* XWDiscoverFullStyleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverFullStyleCell.h; sourceTree = "<group>"; };
+		2EE61C8C1CB65C2B009C2219 /* XWDiscoverFullStyleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverFullStyleCell.m; sourceTree = "<group>"; };
+		2EE61C931CB74606009C2219 /* XWDiscoverCellTitleModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellTitleModule.h; sourceTree = "<group>"; };
+		2EE61C941CB74606009C2219 /* XWDiscoverCellTitleModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellTitleModule.m; sourceTree = "<group>"; };
+		2EE61C961CB74669009C2219 /* XWDiscoverCellContentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellContentModule.h; sourceTree = "<group>"; };
+		2EE61C971CB74669009C2219 /* XWDiscoverCellContentModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellContentModule.m; sourceTree = "<group>"; };
+		2EE61C991CB74FD9009C2219 /* XWDiscoverCellShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellShareModule.h; sourceTree = "<group>"; };
+		2EE61C9A1CB74FD9009C2219 /* XWDiscoverCellShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellShareModule.m; sourceTree = "<group>"; };
+		2EE61C9C1CB78278009C2219 /* XWDiscoverCellVideoModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellVideoModule.h; sourceTree = "<group>"; };
+		2EE61C9D1CB78278009C2219 /* XWDiscoverCellVideoModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellVideoModule.m; sourceTree = "<group>"; };
+		2EE61C9F1CB78ECC009C2219 /* XWDiscoverCellCommentModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWDiscoverCellCommentModule.h; sourceTree = "<group>"; };
+		2EE61CA01CB78ECC009C2219 /* XWDiscoverCellCommentModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWDiscoverCellCommentModule.m; sourceTree = "<group>"; };
 		2EEDC34B1CAB877E00838882 /* XWMenuPopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWMenuPopView.h; sourceTree = "<group>"; };
 		2EEDC34C1CAB877E00838882 /* XWMenuPopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWMenuPopView.m; sourceTree = "<group>"; };
 		2EEDC34F1CAB8AB200838882 /* button-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button-chat.png"; sourceTree = "<group>"; };
@@ -962,7 +962,7 @@
 		2E9092E01CB3BB9F007FE517 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				2EB0438D1CB49E0400F55543 /* JPDiscover */,
+				2EB043B21CB4EDF600F55543 /* XWDiscover */,
 				2E9092E11CB3BB9F007FE517 /* Controller */,
 				2E9092E21CB3BB9F007FE517 /* Model */,
 				2E9092E31CB3BB9F007FE517 /* View */,
@@ -1281,31 +1281,46 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		2EB0438D1CB49E0400F55543 /* JPDiscover */ = {
+		2EB043B21CB4EDF600F55543 /* XWDiscover */ = {
 			isa = PBXGroup;
 			children = (
-				2EB0438E1CB49E0400F55543 /* JPDiscoverBaseTableViewCell.h */,
-				2EB0438F1CB49E0400F55543 /* JPDiscoverBaseTableViewCell.m */,
-				2EB043901CB49E0400F55543 /* JPDiscoverCellBaseModule.h */,
-				2EB043911CB49E0400F55543 /* JPDiscoverCellBaseModule.m */,
-				2EB043921CB49E0400F55543 /* JPDiscoverCellCommentModule.h */,
-				2EB043931CB49E0400F55543 /* JPDiscoverCellCommentModule.m */,
-				2EB043941CB49E0400F55543 /* JPDiscoverCellContentModule.h */,
-				2EB043951CB49E0400F55543 /* JPDiscoverCellContentModule.m */,
-				2EB043961CB49E0400F55543 /* JPDiscoverCellImageModule.h */,
-				2EB043971CB49E0400F55543 /* JPDiscoverCellImageModule.m */,
-				2EB043981CB49E0400F55543 /* JPDiscoverCellShareModule.h */,
-				2EB043991CB49E0400F55543 /* JPDiscoverCellShareModule.m */,
-				2EB0439A1CB49E0400F55543 /* JPDiscoverCellTitleModule.h */,
-				2EB0439B1CB49E0400F55543 /* JPDiscoverCellTitleModule.m */,
-				2EB0439C1CB49E0400F55543 /* JPDiscoverCellVideoModule.h */,
-				2EB0439D1CB49E0400F55543 /* JPDiscoverCellVideoModule.m */,
-				2EB0439E1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.h */,
-				2EB0439F1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.m */,
-				2EB043A01CB49E0400F55543 /* JPDiscoverModel.h */,
-				2EB043A11CB49E0400F55543 /* JPDiscoverModel.m */,
+				2EB043B31CB4EDF600F55543 /* Cell */,
+				2EB043B41CB4EDF600F55543 /* CellModules */,
+				2EB043B51CB4EDF600F55543 /* OneDataModel */,
 			);
-			path = JPDiscover;
+			path = XWDiscover;
+			sourceTree = "<group>";
+		};
+		2EB043B31CB4EDF600F55543 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2EB043B91CB5175B00F55543 /* XWDiscoverBaseCell.h */,
+				2EB043BA1CB5175B00F55543 /* XWDiscoverBaseCell.m */,
+				2EE61C8B1CB65C2B009C2219 /* XWDiscoverFullStyleCell.h */,
+				2EE61C8C1CB65C2B009C2219 /* XWDiscoverFullStyleCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		2EB043B41CB4EDF600F55543 /* CellModules */ = {
+			isa = PBXGroup;
+			children = (
+				2EE61C921CB74606009C2219 /* CellModule */,
+				2EB043BC1CB5F70300F55543 /* XWDiscoverCellBaseModule.h */,
+				2EB043BD1CB5F70300F55543 /* XWDiscoverCellBaseModule.m */,
+				2EB043BF1CB5FCCA00F55543 /* XWDiscoverCellImageModule.h */,
+				2EB043C01CB5FCCA00F55543 /* XWDiscoverCellImageModule.m */,
+			);
+			path = CellModules;
+			sourceTree = "<group>";
+		};
+		2EB043B51CB4EDF600F55543 /* OneDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				2EB043B61CB4EE5000F55543 /* XWDiscoverModel.h */,
+				2EB043B71CB4EE5000F55543 /* XWDiscoverModel.m */,
+			);
+			path = OneDataModel;
 			sourceTree = "<group>";
 		};
 		2EBB4E321CA0E56700889732 /* Images */ = {
@@ -1352,6 +1367,23 @@
 			);
 			name = UserInfo;
 			path = Controller/UserInfo;
+			sourceTree = "<group>";
+		};
+		2EE61C921CB74606009C2219 /* CellModule */ = {
+			isa = PBXGroup;
+			children = (
+				2EE61C931CB74606009C2219 /* XWDiscoverCellTitleModule.h */,
+				2EE61C941CB74606009C2219 /* XWDiscoverCellTitleModule.m */,
+				2EE61C961CB74669009C2219 /* XWDiscoverCellContentModule.h */,
+				2EE61C971CB74669009C2219 /* XWDiscoverCellContentModule.m */,
+				2EE61C991CB74FD9009C2219 /* XWDiscoverCellShareModule.h */,
+				2EE61C9A1CB74FD9009C2219 /* XWDiscoverCellShareModule.m */,
+				2EE61C9C1CB78278009C2219 /* XWDiscoverCellVideoModule.h */,
+				2EE61C9D1CB78278009C2219 /* XWDiscoverCellVideoModule.m */,
+				2EE61C9F1CB78ECC009C2219 /* XWDiscoverCellCommentModule.h */,
+				2EE61CA01CB78ECC009C2219 /* XWDiscoverCellCommentModule.m */,
+			);
+			path = CellModule;
 			sourceTree = "<group>";
 		};
 		2EEDC34A1CAB874000838882 /* Menu */ = {
@@ -1574,13 +1606,13 @@
 				2EAC85491C9F92620044CAF6 /* ViewController.m in Sources */,
 				2E17027F1C9FEFAD00564C89 /* MJRefreshConst.m in Sources */,
 				2E1701C01C9FE9AF00564C89 /* LRRadarIndicatorView.m in Sources */,
+				2EB043BB1CB5175B00F55543 /* XWDiscoverBaseCell.m in Sources */,
 				2E1701BC1C9FE9AF00564C89 /* CXCardContainerView.m in Sources */,
-				2EB043A81CB49E0400F55543 /* JPDiscoverCellTitleModule.m in Sources */,
 				2E91F1A21CA0F29800AFC942 /* XWCardView.m in Sources */,
+				2EE61C8D1CB65C2B009C2219 /* XWDiscoverFullStyleCell.m in Sources */,
 				2E1702771C9FEFAD00564C89 /* MJRefreshAutoStateFooter.m in Sources */,
 				2ECC386A1CA92FB000FFFDAA /* BuyCrzayfireController.m in Sources */,
 				2EA75AB11CA4ADB900803638 /* XWRadarPointView.m in Sources */,
-				2EB043AB1CB49E0400F55543 /* JPDiscoverModel.m in Sources */,
 				2E1702801C9FEFAD00564C89 /* UIScrollView+MJExtension.m in Sources */,
 				2E1702721C9FEFAD00564C89 /* MJRefreshComponent.m in Sources */,
 				2E1701C11C9FE9AF00564C89 /* LRRadarPointView.m in Sources */,
@@ -1588,14 +1620,16 @@
 				2E1701F61C9FEABE00564C89 /* SDImageCache.m in Sources */,
 				2E17027B1C9FEFAD00564C89 /* MJRefreshGifHeader.m in Sources */,
 				2E3B94751CA1471700DE1B79 /* RadarController.m in Sources */,
-				2EB043A61CB49E0400F55543 /* JPDiscoverCellImageModule.m in Sources */,
+				2EB043BE1CB5F70300F55543 /* XWDiscoverCellBaseModule.m in Sources */,
 				2E1702811C9FEFAD00564C89 /* UIScrollView+MJRefresh.m in Sources */,
 				2EAC855E1C9F96150044CAF6 /* BaseViewController.m in Sources */,
 				2ECC38631CA8C50800FFFDAA /* XWBlueToothController.m in Sources */,
 				2E1701F51C9FEABE00564C89 /* NSData+ImageContentType.m in Sources */,
 				2E1701C91C9FE9AF00564C89 /* ViewManager.m in Sources */,
+				2EE61C9E1CB78278009C2219 /* XWDiscoverCellVideoModule.m in Sources */,
 				2E1701C71C9FE9AF00564C89 /* Scheduler.m in Sources */,
 				2E1701CB1C9FE9AF00564C89 /* ZLSwipeableViewMovement.m in Sources */,
+				2EE61C981CB74669009C2219 /* XWDiscoverCellContentModule.m in Sources */,
 				2EA75AB51CA4AE4D00803638 /* XWAnnotationView.m in Sources */,
 				2E1701F41C9FEABE00564C89 /* MKAnnotationView+WebCache.m in Sources */,
 				2E1701C21C9FE9AF00564C89 /* LRRadarView.m in Sources */,
@@ -1607,13 +1641,10 @@
 				2E1701FA1C9FEABE00564C89 /* SDWebImageDownloaderOperation.m in Sources */,
 				2E1702261C9FEF0500564C89 /* OneNewImage.m in Sources */,
 				2E1702821C9FEFAD00564C89 /* UIView+MJExtension.m in Sources */,
-				2EB043A71CB49E0400F55543 /* JPDiscoverCellShareModule.m in Sources */,
 				2E17022B1C9FEF0500564C89 /* OneImageCell.m in Sources */,
 				2EAC85671C9F964C0044CAF6 /* PersonController.m in Sources */,
 				2ECC38751CAA2A7E00FFFDAA /* UserInfoController.m in Sources */,
-				2EB043A51CB49E0400F55543 /* JPDiscoverCellContentModule.m in Sources */,
 				2E1702781C9FEFAD00564C89 /* MJRefreshBackGifFooter.m in Sources */,
-				2EB043A41CB49E0400F55543 /* JPDiscoverCellCommentModule.m in Sources */,
 				2E6F24701CA760C30032D246 /* PeripheralInfo.m in Sources */,
 				2EF79CC21CA03DBD0071D90C /* NSObject+ZXPUnicode.m in Sources */,
 				2E1701BD1C9FE9AF00564C89 /* CXCardView.m in Sources */,
@@ -1623,17 +1654,16 @@
 				2E1702761C9FEFAD00564C89 /* MJRefreshAutoNormalFooter.m in Sources */,
 				2EA75AB01CA4ADB900803638 /* XWRadarIndicatorView.m in Sources */,
 				2E1701F71C9FEABE00564C89 /* SDWebImageCompat.m in Sources */,
+				2EE61C951CB74606009C2219 /* XWDiscoverCellTitleModule.m in Sources */,
 				2E1701FE1C9FEABE00564C89 /* UIImage+GIF.m in Sources */,
 				2E1702281C9FEF0500564C89 /* MoreThan3ImageCell.m in Sources */,
-				2EB043A91CB49E0400F55543 /* JPDiscoverCellVideoModule.m in Sources */,
 				2E1702741C9FEFAD00564C89 /* MJRefreshHeader.m in Sources */,
 				2E1702011C9FEABE00564C89 /* UIImageView+HighlightedWebCache.m in Sources */,
-				2EB043AA1CB49E0400F55543 /* JPDiscoverFullStyleTableViewCell.m in Sources */,
 				2EAC85761C9F97830044CAF6 /* RankingController.m in Sources */,
-				2EB043A21CB49E0400F55543 /* JPDiscoverBaseTableViewCell.m in Sources */,
 				2E22E1AD1CA25976002CC9A1 /* LinkPersonController.m in Sources */,
 				2E1701FF1C9FEABE00564C89 /* UIImage+MultiFormat.m in Sources */,
 				2EA75AB21CA4ADB900803638 /* XWRadarView.m in Sources */,
+				2EB043B81CB4EE5000F55543 /* XWDiscoverModel.m in Sources */,
 				2E1701C31C9FE9AF00564C89 /* DefaultDirectionInterpretor.m in Sources */,
 				2E1702271C9FEF0500564C89 /* JokeImageData.m in Sources */,
 				2E9092E61CB3BC9F007FE517 /* DiscoverMainController.m in Sources */,
@@ -1650,6 +1680,7 @@
 				2E1701C41C9FE9AF00564C89 /* DefaultShouldSwipeDeterminator.m in Sources */,
 				2E1702851C9FF24500564C89 /* UINavigationController+Tool.m in Sources */,
 				2E17022D1C9FEF0500564C89 /* OnlyTextCell.m in Sources */,
+				2EB043C11CB5FCCA00F55543 /* XWDiscoverCellImageModule.m in Sources */,
 				2E1701F91C9FEABE00564C89 /* SDWebImageDownloader.m in Sources */,
 				2E1702031C9FEABE00564C89 /* UIView+WebCacheOperation.m in Sources */,
 				2E1702751C9FEFAD00564C89 /* MJRefreshAutoGifFooter.m in Sources */,
@@ -1669,6 +1700,7 @@
 				2E3B94411CA1188800DE1B79 /* LocusController.m in Sources */,
 				2E1702701C9FEFAD00564C89 /* MJRefreshAutoFooter.m in Sources */,
 				2EAA035C1CA1904200874396 /* SearchPersonController.m in Sources */,
+				2EE61CA11CB78ECC009C2219 /* XWDiscoverCellCommentModule.m in Sources */,
 				2E1701C51C9FE9AF00564C89 /* DefaultViewAnimator.m in Sources */,
 				2E1701D11C9FEA7400564C89 /* MBProgressHUD.m in Sources */,
 				2E824D721CAA650C00C5B668 /* UIView+CurrentController.m in Sources */,
@@ -1676,10 +1708,10 @@
 				2ECC387A1CAA2F7200FFFDAA /* UserInfoIconCell.m in Sources */,
 				2EF79CC11CA03DBD0071D90C /* NSDictionary+ZXPUnicode.m in Sources */,
 				2E1701BF1C9FE9AF00564C89 /* UIColor+FlatColors.m in Sources */,
+				2EE61C9B1CB74FD9009C2219 /* XWDiscoverCellShareModule.m in Sources */,
 				2E1701B01C9FE9AF00564C89 /* OneDetailsController.m in Sources */,
 				2E824D6F1CAA534B00C5B668 /* XWAlertController.m in Sources */,
 				2E1702731C9FEFAD00564C89 /* MJRefreshFooter.m in Sources */,
-				2EB043A31CB49E0400F55543 /* JPDiscoverCellBaseModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

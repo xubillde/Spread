@@ -9,11 +9,15 @@
 #import "DiscoverMainController.h"
 #import "MJRefresh.h"
 #import <UIImageView+AFNetworking.h>
-#import "JPDiscoverFullStyleTableViewCell.h"
-#import "JPDiscoverModel.h"
+//#import "JPDiscoverFullStyleTableViewCell.h"
+//#import "JPDiscoverModel.h"
+
+#import "XWDiscoverModel.h"
+#import "XWDiscoverFullStyleCell.h"
+//#import "<#header#>"
 
 
-@interface DiscoverMainController ()<UITableViewDataSource,UITableViewDelegate,JPDiscoverTableViewCellDataSource,JPDiscoverTableViewCellDelegate>
+@interface DiscoverMainController ()<UITableViewDataSource,UITableViewDelegate,XWDiscoverTableViewCellDelegate,XWDiscoverTableViewCellDataSource>
 
 //数据数组
 @property (nonatomic, strong) NSMutableArray *dataSource;
@@ -28,8 +32,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //数据数组
     _dataSource = [[NSMutableArray alloc] init];
     
+    //动态列表
     _listTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-64) style:UITableViewStylePlain];
     [_listTable setDataSource:self];
     [_listTable setDelegate:self];
@@ -55,7 +61,8 @@
     
     //网络请求数据->
     for (int i = 0; i<10; i++) {
-        [_dataSource addObject:[JPDiscoverModel getTestModel]];
+//        [_dataSource addObject:[XWDiscoverModel getModel]];
+        [_dataSource addObject:[XWDiscoverModel getTestModel]];
     }
     [_listTable.mj_header endRefreshing];
     [_listTable reloadData];
@@ -65,117 +72,149 @@
 -(void)loadMoreData{
     NSLog(@"上拉刷新");
     for (int i = 0; i < 10; i+=1) {
-        [_dataSource addObject:[JPDiscoverModel getTestModel]];
+//        [_dataSource addObject:[XWDiscoverModel getModel]];
+        [_dataSource addObject:[XWDiscoverModel getTestModel]];
     }
     [_listTable.mj_footer endRefreshing];
     [_listTable reloadData];
     
 }
 
-//#pragma mark - UITableViewDataSource UITableViewDelegate 方法->
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-//    return 1;
-//}
-//
-////初始化cell
-//-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    
-//    static NSString *ID = @"cell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-//    if (!cell) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-//    }
-//    //初始化cell数据!
-//    
-//    
-//    return cell;
-//}
-
-
 #pragma mark Cell-Delegate
-
-- (void)groupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell loadImageView:(UIImageView *)imageView imageUrl:(NSString *)imageUrl placeholderImage:(NSString *)placeholderImageName {
+//为imageView图片
+-(void)groupTableViewCell:(XWDiscoverBaseCell *)tableViewCell loadIamgeView:(UIImageView *)imageView imageUrl:(NSString *)imageUrl placeholderImageName:(NSString *)placeholderImageName{
     if (imageUrl.length != 0) {
         [imageView setImageWithURL:[NSURL URLWithString:imageUrl] placeholderImage:[UIImage imageNamed:placeholderImageName]];
-    }else {
+    }else{
         imageView.image = nil;
     }
+    
 }
-
-- (void)groupTableViewCellTapPraiseButton:(JPDiscoverBaseTableViewCell *)tableViewCell {
+/**
+ * 点击照片墙操作!!
+ */
+-(void)groupTableViewCellTapImageWall:(XWDiscoverBaseCell *)tableViewCell imageWall:(XWDiscoverCellImageModule *)imageWall imageView:(UIImageView *)imageView index:(NSUInteger)index{
+    NSLog(@"点击照片墙,哈哈哈.这是第%ld张照片",index);
+}
+/**
+ *  点击头像加载操作
+ */
+-(void)groupTableViewCellTapUserHead:(XWDiscoverBaseCell *)tableViewCell{
+    NSLog(@"点击头像加载操作,哈哈哈");
+}
+/**
+ *  点赞操作
+ */
+-(void)groupTableViewCellTapPraiseButton:(XWDiscoverBaseCell *)tableViewCell{
+    NSLog(@"点赞操作,哈哈哈");
+    
     NSIndexPath *indexPath = [_listTable indexPathForCell:tableViewCell];
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     BOOL willBePraised = YES;
     if (cellModel.commentsModel.isPraised) {
-        //取消赞
+        //如果之前点赞过此动态...取消赞!
         willBePraised = NO;
-    }else {
+    }else{
         //赞
         willBePraised = YES;
     }
+    
+    //willBePraised->当前真实的点赞情况
     if (willBePraised) {
-        cellModel.commentsModel.isPraised = YES;
-        cellModel.commentsModel.praiseCount++;
-    }else {
-        cellModel.commentsModel.isPraised = NO;
-        cellModel.commentsModel.praiseCount--;
+        cellModel.commentsModel.isPraised  =YES;
+        cellModel.commentsModel.praisedCount++;
+    }else{
+        cellModel.commentsModel.isPraised  =NO;
+        cellModel.commentsModel.praisedCount--;
     }
+    
+    //刷新当前cell
     NSArray *indexPaths = [NSArray arrayWithObject:indexPath];
     [_listTable reloadRowsAtIndexPaths:indexPaths withRowAnimation:NO];
+}
+/**
+ *  评论操作
+ */
+-(void)groupTableViewCellTapCommentButton:(XWDiscoverBaseCell *)tableViewCell{
+    NSLog(@"评论操作,哈哈哈");
+}
+/**
+ *  点击分享操作
+ */
+-(void)groupTableViewCellTapShareContent:(XWDiscoverBaseCell *)tableViewCell{
+     NSLog(@"点击分享操作,哈哈哈");
+}
+/**
+ *  点击视频播放操作
+ */
+-(void)groupTableViewCellTapVideoPlay:(XWDiscoverBaseCell *)tableViewCell{
+    NSLog(@"点击视频播放操作,哈哈哈");
 }
 
 #pragma mark Cell-datasource
 
-- (JPDiscoverTitleModel *)titleDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 顶部数据 */
+-(XWDiscoverTitleModel *)titleDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableviewCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.titleModel;
 }
 
-- (JPDiscoverContentModel *)contentDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 内容数据 */
+-(XWDiscoverContentModel *)contentDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableViewCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.contentModel;
 }
 
-- (JPDiscoverImageModel *)imageDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 图片数据 */
+-(XWDiscoverImageModel *)imageDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableVeiwCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.imageModel;
 }
 
-- (JPDiscoverShareModel *)shareDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 分享数据 */
+-(XWDiscoverShareModel *)shareDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableVeiwCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.shareModel;
 }
 
-- (JPDiscoverVideoModel *)videoDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 视频数据 */
+-(XWDiscoverVideoModel *)videoDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableVeiwCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.videoModel;
 }
 
-- (JPDiscoverCommentsModel *)commentsDataForGroupTableViewCell:(JPDiscoverBaseTableViewCell *)tableViewCell indexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+/** 点赞评论数据 */
+-(XWDiscoverCommentsModel *)commentsDataForGroupTableViewCell:(XWDiscoverBaseCell *)tableVeiwCell indexPath:(NSIndexPath *)indexPath{
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
     return cellModel.commentsModel;
 }
 
+#pragma mark - UITableViewDataSource UITableViewDelegate 方法->
+//cell高度
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    JPDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
-    CGFloat totalHeight = [JPDiscoverFullStyleTableViewCell countHeightWithGroupCellModel:cellModel width:CGRectGetWidth(self.view.frame)];
+    //根据模型确定不同高度
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+    CGFloat totalHeight = [XWDiscoverFullStyleCell countHeightWithGroupCellModel:cellModel width:CGRectGetWidth(self.view.frame)];
     return totalHeight;
 }
-
+//数据个数->
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [_dataSource count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellID = @"JPDiscoverFullStyleTableViewCell";
-    JPDiscoverFullStyleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellID];
+//初始化cell
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString *ID = @"XWDiscoverFullStyleCell";
+    XWDiscoverFullStyleCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     if (!cell) {
-        cell = [[JPDiscoverFullStyleTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellID width:CGRectGetWidth(self.view.frame)];
-        [cell setBackgroundColor:UIColorRGB(242, 242, 242)];
+        cell = [[XWDiscoverFullStyleCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID width:CGRectGetWidth(self.view.frame)];
+        [cell setBackgroundColor:ColorWithRGB(242, 242, 242)];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        cell.dataSource = self;
-        cell.delegate = self;
+        [cell setDataSource:self];
+        [cell setDelegate:self];
     }
+    //初始化cell数据!
     [cell loadDataSourceWithIndexPath:indexPath];
     return cell;
 }
