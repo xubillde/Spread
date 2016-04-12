@@ -69,17 +69,51 @@
 
         
         
+        _registerNumFD = [[UITextField alloc] initWithFrame:CGRectMake(27, 6, kScreenWidth-54, 48)];
+        [_registerNumFD setPlaceholder:@"手机号"];
+        [_registerNumFD setClearButtonMode:UITextFieldViewModeWhileEditing];
+        [_registerNumFD setBorderStyle:UITextBorderStyleNone];
+        [_registerNumFD setUserInteractionEnabled:YES];
+        [_registerNumFD setKeyboardType:UIKeyboardTypePhonePad];
+        [_registerMianView addSubview:_registerNumFD];
         
+        
+        CALayer *loginNumFDLineLayer = [[CALayer alloc] init];
+        [loginNumFDLineLayer setFrame:CGRectMake(27, CGRectGetMaxY(_registerNumFD.frame), CGRectGetWidth(_registerNumFD.frame), 1)];
+        [loginNumFDLineLayer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+        [_registerMianView.layer addSublayer:loginNumFDLineLayer];
+        
+        
+        _registerNumFD = [[UITextField alloc] initWithFrame:CGRectMake(27, CGRectGetMaxY(_registerNumFD.frame) + 4, kScreenWidth-54, 48)];
+        [_registerNumFD setPlaceholder:@"密码"];
+        [_registerNumFD setSecureTextEntry:YES];
+        [_registerNumFD setClearButtonMode:UITextFieldViewModeWhileEditing];
+        [_registerNumFD setKeyboardType:UIKeyboardTypeASCIICapable];
+        [_registerNumFD setBorderStyle:UITextBorderStyleNone];
+        [_registerNumFD setUserInteractionEnabled:YES];
+        [_registerMianView addSubview:_registerNumFD];
+        
+        
+        CALayer *loginPasswordFDLineLayer = [[CALayer alloc] init];
+        [loginPasswordFDLineLayer setFrame:CGRectMake(27, CGRectGetMaxY(_registerNumFD.frame), CGRectGetWidth(_registerNumFD.frame), 1)];
+        [loginPasswordFDLineLayer setBackgroundColor:[UIColor lightGrayColor].CGColor];
+        [_registerMianView.layer addSublayer:loginPasswordFDLineLayer];
+        
+        
+        //登录
+        _registerMainBtn = [[UIButton alloc] initInquireButtonWithTitle:@"注册" withFrame:CGRectMake(27, CGRectGetMaxY(_registerNumFD.frame)+10,kScreenWidth-54 , 44) andBackgroundColor:colorWithRGBA(123, 123, 54, 0.8) andhightlightColor:colorWithRGBA(123, 123, 54, 0.6)];
+        [_registerMianView addSubview:_registerMainBtn];
+
         
     }
     return _registerMianView;
 }
 //登录主体视图
 -(UIView *)loginMianView{
-    if (_loginMianView == nil) {
-        _loginMianView = [[UIView alloc] init];
-        [_loginMianView setBackgroundColor:ColorWithRGB(242, 242, 242)];
-        [_loginMianView setUserInteractionEnabled:YES];
+    if (_registerMianView == nil) {
+        _registerMianView = [[UIView alloc] init];
+        [_registerMianView setBackgroundColor:ColorWithRGB(242, 242, 242)];
+        [_registerMianView setUserInteractionEnabled:YES];
         
         _loginNumFD = [[UITextField alloc] initWithFrame:CGRectMake(27, 6, kScreenWidth-54, 48)];
         [_loginNumFD setPlaceholder:@"手机号"];
@@ -87,13 +121,13 @@
         [_loginNumFD setBorderStyle:UITextBorderStyleNone];
         [_loginNumFD setUserInteractionEnabled:YES];
         [_loginNumFD setKeyboardType:UIKeyboardTypePhonePad];
-        [_loginMianView addSubview:_loginNumFD];
+        [_registerMianView addSubview:_loginNumFD];
         
         
         CALayer *loginNumFDLineLayer = [[CALayer alloc] init];
         [loginNumFDLineLayer setFrame:CGRectMake(27, CGRectGetMaxY(_loginNumFD.frame), CGRectGetWidth(_loginNumFD.frame), 1)];
         [loginNumFDLineLayer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [_loginMianView.layer addSublayer:loginNumFDLineLayer];
+        [_registerMianView.layer addSublayer:loginNumFDLineLayer];
         
         
         _loginPasswordFD = [[UITextField alloc] initWithFrame:CGRectMake(27, CGRectGetMaxY(_loginNumFD.frame) + 4, kScreenWidth-54, 48)];
@@ -103,13 +137,13 @@
         [_loginPasswordFD setKeyboardType:UIKeyboardTypeASCIICapable];
         [_loginPasswordFD setBorderStyle:UITextBorderStyleNone];
         [_loginPasswordFD setUserInteractionEnabled:YES];
-        [_loginMianView addSubview:_loginPasswordFD];
+        [_registerMianView addSubview:_loginPasswordFD];
         
         
         CALayer *loginPasswordFDLineLayer = [[CALayer alloc] init];
         [loginPasswordFDLineLayer setFrame:CGRectMake(27, CGRectGetMaxY(_loginPasswordFD.frame), CGRectGetWidth(_loginPasswordFD.frame), 1)];
         [loginPasswordFDLineLayer setBackgroundColor:[UIColor lightGrayColor].CGColor];
-        [_loginMianView.layer addSublayer:loginPasswordFDLineLayer];
+        [_registerMianView.layer addSublayer:loginPasswordFDLineLayer];
         
         
         //忘记密码
@@ -117,21 +151,21 @@
         [_forgetPasswordBtn setTitle:@"忘记密码?" forState:UIControlStateNormal];
         [_forgetPasswordBtn.titleLabel setFont:[UIFont systemFontOfSize:12.0f]];
         [_forgetPasswordBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_loginMianView addSubview:_forgetPasswordBtn];
+        [_registerMianView addSubview:_forgetPasswordBtn];
         
         //登录
-        _loginMainBtn = [[UIButton alloc] initInquireButtonWithTitle:@"登录" withFrame:CGRectMake(27, CGRectGetMaxY(_forgetPasswordBtn.frame)+2,kScreenWidth-54 , 44) andBackgroundColor:colorWithRGBA(123, 123, 54, 0.8) andhightlightColor:colorWithRGBA(123, 123, 54, 0.6)];
-        [_loginMianView addSubview:_loginMainBtn];
+        _registerMainBtn = [[UIButton alloc] initInquireButtonWithTitle:@"登录" withFrame:CGRectMake(27, CGRectGetMaxY(_forgetPasswordBtn.frame)+2,kScreenWidth-54 , 44) andBackgroundColor:colorWithRGBA(123, 123, 54, 0.8) andhightlightColor:colorWithRGBA(123, 123, 54, 0.6)];
+        [_registerMianView addSubview:_registerMainBtn];
         
         
         //微信登录
-        _wechatLoginBtn = [[UIButton alloc] initInquireButtonWithTitle:@"微信登录" withFrame:CGRectMake(27, CGRectGetMaxY(_loginMainBtn.frame)+4,kScreenWidth-54 , 44) andBackgroundColor:colorWithRGBA(25, 205, 34, 0.8) andhightlightColor:colorWithRGBA(25, 205, 34, 0.8)];
+        _wechatLoginBtn = [[UIButton alloc] initInquireButtonWithTitle:@"微信登录" withFrame:CGRectMake(27, CGRectGetMaxY(_registerMainBtn.frame)+4,kScreenWidth-54 , 44) andBackgroundColor:colorWithRGBA(25, 205, 34, 0.8) andhightlightColor:colorWithRGBA(25, 205, 34, 0.8)];
         [_wechatLoginBtn addTarget:self action:@selector(wechatLoginClick) forControlEvents:UIControlEventTouchUpInside];
         [self.loginMianView addSubview:_wechatLoginBtn];
        
         
     }
-    return _loginMianView;
+    return _registerMianView;
 }
 
 //
@@ -150,6 +184,7 @@
     [_RegisterView setBackgroundColor:[UIColor clearColor]];
     
     //主体视图更改样式
+    [self.registerMianView removeFromSuperview];
     [self.mainView addSubview:self.loginMianView];
 }
 
@@ -161,7 +196,8 @@
     [_LoginView setBackgroundColor:[UIColor clearColor]];
     [_RegisterView setBackgroundColor:[UIColor yellowColor]];
     
-    
+    [self.loginMianView removeFromSuperview];
+    [self.mainView addSubview:self.registerMianView];
 }
 
 - (void)viewDidLoad {
