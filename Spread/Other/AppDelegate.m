@@ -15,6 +15,8 @@
 
 #import "CustomTabBarController.h"
 
+#import "LoginAndRegisterController.h"
+
 
 @interface AppDelegate ()
 
@@ -29,8 +31,11 @@
     //设置主窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
-    self.window.rootViewController = [CustomTabBarController shareInstance];
+//    self.window.rootViewController = [CustomTabBarController shareInstance];
     [self.window makeKeyAndVisible];
+    
+    //测试
+    self.window.rootViewController = [[LoginAndRegisterController alloc]init];
     
     return YES;
 }

@@ -102,6 +102,12 @@
 		2E3B946B1CA13F1000DE1B79 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E3B946D1CA13F1000DE1B79 /* Localizable.strings */; };
 		2E3B94751CA1471700DE1B79 /* RadarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B94721CA1471700DE1B79 /* RadarController.m */; };
 		2E3B94791CA14E8D00DE1B79 /* LocationSetUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E3B94781CA14E8D00DE1B79 /* LocationSetUpController.m */; };
+		2E638D851CBB877600E62917 /* LoginAndRegisterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E638D831CBB877600E62917 /* LoginAndRegisterController.m */; };
+		2E638D861CBB877600E62917 /* LoginAndRegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E638D841CBB877600E62917 /* LoginAndRegisterController.xib */; };
+		2E638D881CBB8BA200E62917 /* loginBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E638D871CBB8BA200E62917 /* loginBG.png */; };
+		2E638D8C1CBB989500E62917 /* UIButton+Click.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E638D8B1CBB989500E62917 /* UIButton+Click.m */; };
+		2E638D8F1CBB98CB00E62917 /* UIImage+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E638D8E1CBB98CB00E62917 /* UIImage+Tool.m */; };
+		2E638D921CBB992000E62917 /* UITextField+Input.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E638D911CBB992000E62917 /* UITextField+Input.m */; };
 		2E6F24701CA760C30032D246 /* PeripheralInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6F246F1CA760C30032D246 /* PeripheralInfo.m */; };
 		2E824D6F1CAA534B00C5B668 /* XWAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E824D6E1CAA534B00C5B668 /* XWAlertController.m */; };
 		2E824D721CAA650C00C5B668 /* UIView+CurrentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E824D711CAA650B00C5B668 /* UIView+CurrentController.m */; };
@@ -350,6 +356,16 @@
 		2E3B94721CA1471700DE1B79 /* RadarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadarController.m; sourceTree = "<group>"; };
 		2E3B94771CA14E8D00DE1B79 /* LocationSetUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationSetUpController.h; sourceTree = "<group>"; };
 		2E3B94781CA14E8D00DE1B79 /* LocationSetUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationSetUpController.m; sourceTree = "<group>"; };
+		2E638D821CBB877600E62917 /* LoginAndRegisterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginAndRegisterController.h; sourceTree = "<group>"; };
+		2E638D831CBB877600E62917 /* LoginAndRegisterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginAndRegisterController.m; sourceTree = "<group>"; };
+		2E638D841CBB877600E62917 /* LoginAndRegisterController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginAndRegisterController.xib; sourceTree = "<group>"; };
+		2E638D871CBB8BA200E62917 /* loginBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginBG.png; sourceTree = "<group>"; };
+		2E638D8A1CBB989500E62917 /* UIButton+Click.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Click.h"; sourceTree = "<group>"; };
+		2E638D8B1CBB989500E62917 /* UIButton+Click.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Click.m"; sourceTree = "<group>"; };
+		2E638D8D1CBB98CB00E62917 /* UIImage+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tool.h"; sourceTree = "<group>"; };
+		2E638D8E1CBB98CB00E62917 /* UIImage+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tool.m"; sourceTree = "<group>"; };
+		2E638D901CBB992000E62917 /* UITextField+Input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Input.h"; sourceTree = "<group>"; };
+		2E638D911CBB992000E62917 /* UITextField+Input.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Input.m"; sourceTree = "<group>"; };
 		2E6F246E1CA760C30032D246 /* PeripheralInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralInfo.h; sourceTree = "<group>"; };
 		2E6F246F1CA760C30032D246 /* PeripheralInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralInfo.m; sourceTree = "<group>"; };
 		2E824D6D1CAA534B00C5B668 /* XWAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWAlertController.h; sourceTree = "<group>"; };
@@ -697,6 +713,12 @@
 		2E17020B1C9FEB8800564C89 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				2E638D8A1CBB989500E62917 /* UIButton+Click.h */,
+				2E638D8B1CBB989500E62917 /* UIButton+Click.m */,
+				2E638D8D1CBB98CB00E62917 /* UIImage+Tool.h */,
+				2E638D8E1CBB98CB00E62917 /* UIImage+Tool.m */,
+				2E638D901CBB992000E62917 /* UITextField+Input.h */,
+				2E638D911CBB992000E62917 /* UITextField+Input.m */,
 				2E17020C1C9FEB8800564C89 /* UIViewExt.h */,
 				2E17020D1C9FEB8800564C89 /* UIViewExt.m */,
 				2E1702831C9FF24500564C89 /* UINavigationController+Tool.h */,
@@ -938,6 +960,33 @@
 			path = locationSetUp;
 			sourceTree = "<group>";
 		};
+		2E638D801CBB875100E62917 /* LoginAndRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2E638D891CBB93D800E62917 /* View */,
+				2E638D811CBB875100E62917 /* Controller */,
+			);
+			path = LoginAndRegister;
+			sourceTree = "<group>";
+		};
+		2E638D811CBB875100E62917 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2E638D871CBB8BA200E62917 /* loginBG.png */,
+				2E638D821CBB877600E62917 /* LoginAndRegisterController.h */,
+				2E638D831CBB877600E62917 /* LoginAndRegisterController.m */,
+				2E638D841CBB877600E62917 /* LoginAndRegisterController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2E638D891CBB93D800E62917 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2E6F246C1CA760A10032D246 /* Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
@@ -1051,6 +1100,7 @@
 		2EAC85281C9F90100044CAF6 /* Spread */ = {
 			isa = PBXGroup;
 			children = (
+				2E638D801CBB875100E62917 /* LoginAndRegister */,
 				2E9092E01CB3BB9F007FE517 /* Discover */,
 				2E3B946F1CA1471700DE1B79 /* RadarScan */,
 				2E3B943B1CA1185C00DE1B79 /* Locus */,
@@ -1521,6 +1571,7 @@
 				2E17022C1C9FEF0500564C89 /* OneImageCell.xib in Resources */,
 				2ECC387B1CAA2F7200FFFDAA /* UserInfoIconCell.xib in Resources */,
 				2EBB4E381CA0E56700889732 /* earthGif.gif in Resources */,
+				2E638D861CBB877600E62917 /* LoginAndRegisterController.xib in Resources */,
 				2E3B94641CA13DD700DE1B79 /* InfoPlist.strings in Resources */,
 				2EEDC35E1CAB8AB200838882 /* button-video.png in Resources */,
 				2E1702291C9FEF0500564C89 /* MoreThan3ImageCell.xib in Resources */,
@@ -1530,6 +1581,7 @@
 				2EB043AD1CB4A22F00F55543 /* icon.ttf in Resources */,
 				2ECC38641CA8C50800FFFDAA /* XWBlueToothController.xib in Resources */,
 				2EAC85631C9F96370044CAF6 /* ChattingController.xib in Resources */,
+				2E638D881CBB8BA200E62917 /* loginBG.png in Resources */,
 				2EAC85361C9F90100044CAF6 /* Assets.xcassets in Resources */,
 				2EAC85771C9F97830044CAF6 /* RankingController.xib in Resources */,
 				2EEDC35A1CAB8AB200838882 /* button-link.png in Resources */,
@@ -1600,6 +1652,7 @@
 			files = (
 				2EF79CC01CA03DBD0071D90C /* NSArray+ ZXPUnicode.m in Sources */,
 				2EAC85841C9F998A0044CAF6 /* PublishController.m in Sources */,
+				2E638D8C1CBB989500E62917 /* UIButton+Click.m in Sources */,
 				2E1702001C9FEABE00564C89 /* UIImage+WebP.m in Sources */,
 				2E1701FD1C9FEABE00564C89 /* UIButton+WebCache.m in Sources */,
 				2E17022A1C9FEF0500564C89 /* OneDiffusionDetails.m in Sources */,
@@ -1637,6 +1690,7 @@
 				2E1702791C9FEFAD00564C89 /* MJRefreshBackNormalFooter.m in Sources */,
 				2E1701CD1C9FE9AF00564C89 /* DiffusionInView.m in Sources */,
 				2E17020E1C9FEB8800564C89 /* UIViewExt.m in Sources */,
+				2E638D921CBB992000E62917 /* UITextField+Input.m in Sources */,
 				2E1701CC1C9FE9AF00564C89 /* ZLSwipeableViewSwipeOptions.m in Sources */,
 				2E1701FA1C9FEABE00564C89 /* SDWebImageDownloaderOperation.m in Sources */,
 				2E1702261C9FEF0500564C89 /* OneNewImage.m in Sources */,
@@ -1648,6 +1702,7 @@
 				2E6F24701CA760C30032D246 /* PeripheralInfo.m in Sources */,
 				2EF79CC21CA03DBD0071D90C /* NSObject+ZXPUnicode.m in Sources */,
 				2E1701BD1C9FE9AF00564C89 /* CXCardView.m in Sources */,
+				2E638D8F1CBB98CB00E62917 /* UIImage+Tool.m in Sources */,
 				2E1701CA1C9FE9AF00564C89 /* ZLSwipeableView.m in Sources */,
 				2EAC85481C9F92620044CAF6 /* main.m in Sources */,
 				2E17027A1C9FEFAD00564C89 /* MJRefreshBackStateFooter.m in Sources */,
@@ -1711,6 +1766,7 @@
 				2EE61C9B1CB74FD9009C2219 /* XWDiscoverCellShareModule.m in Sources */,
 				2E1701B01C9FE9AF00564C89 /* OneDetailsController.m in Sources */,
 				2E824D6F1CAA534B00C5B668 /* XWAlertController.m in Sources */,
+				2E638D851CBB877600E62917 /* LoginAndRegisterController.m in Sources */,
 				2E1702731C9FEFAD00564C89 /* MJRefreshFooter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
