@@ -169,14 +169,14 @@ static id _instance;
     dispatch_once(&onceToken, ^{
         
         //设置顶部title
-        [self.radarVC.tabBarItem setTitle:@"搜索"];
-        [self.rankingVC.tabBarItem setTitle:@"寻人"];
         [self.discoverMainVC.tabBarItem setTitle:@"发现"];
+        [self.rankingVC.tabBarItem setTitle:@"新闻"];
+        [self.radarVC.tabBarItem setTitle:@"寻人"];
         [self.personVC.tabBarItem setTitle:@"个人信息"];
         
-        [self.radarVC.navigationItem setTitle:@"搜寻附近迷失的孩子"];
-        [self.rankingVC.navigationItem setTitle:@"寻人热度排行"];
         [self.discoverMainVC.navigationItem setTitle:@"发现"];
+        [self.rankingVC.navigationItem setTitle:@"新闻"];
+        [self.radarVC.navigationItem setTitle:@"寻人"];
         [self.personVC.navigationItem setTitle:@"个人信息"];
         
         //设置图片
@@ -209,7 +209,7 @@ static id _instance;
         UINavigationController *discoverMainNav = [[UINavigationController alloc] initWithRootViewController:self.discoverMainVC];
         UINavigationController *personNav = [[UINavigationController alloc] initWithRootViewController:self.personVC];
         
-        self.viewControllers = @[radarNav,rankingNav,discoverMainNav,personNav];
+        self.viewControllers = @[discoverMainNav,rankingNav,radarNav,personNav];
     });
     
     

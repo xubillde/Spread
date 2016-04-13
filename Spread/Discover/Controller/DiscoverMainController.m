@@ -14,7 +14,11 @@
 
 #import "XWDiscoverModel.h"
 #import "XWDiscoverFullStyleCell.h"
+#import "XWDiscoverCellTitleModule.h"
 //#import "<#header#>"
+
+#import "XWScanImage.h"
+#import "SharingLinkWebController.h"
 
 
 @interface DiscoverMainController ()<UITableViewDataSource,UITableViewDelegate,XWDiscoverTableViewCellDelegate,XWDiscoverTableViewCellDataSource>
@@ -95,12 +99,23 @@
  */
 -(void)groupTableViewCellTapImageWall:(XWDiscoverBaseCell *)tableViewCell imageWall:(XWDiscoverCellImageModule *)imageWall imageView:(UIImageView *)imageView index:(NSUInteger)index{
     NSLog(@"点击照片墙,哈哈哈.这是第%ld张照片",index);
+    UIImageView *currentImageView = [imageWall imageViewWithIndex:index];
+    [XWScanImage scanBigImageWithImageView:currentImageView];
 }
 /**
  *  点击头像加载操作
  */
 -(void)groupTableViewCellTapUserHead:(XWDiscoverBaseCell *)tableViewCell{
     NSLog(@"点击头像加载操作,哈哈哈");
+    //获取当前cell的数据模型
+    NSIndexPath *indexPath = [_listTable indexPathForCell:tableViewCell];
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+//    cellModel.titleModel.
+    
+    
+    XWDiscoverCellTitleModule *titleModule = [tableViewCell.modules objectAtIndex:0];
+    [XWScanImage scanBigImageWithImageView:titleModule.headIcon];
+
 }
 /**
  *  点赞操作
@@ -143,6 +158,14 @@
  */
 -(void)groupTableViewCellTapShareContent:(XWDiscoverBaseCell *)tableViewCell{
      NSLog(@"点击分享操作,哈哈哈");
+    
+    NSIndexPath *indexPath = [_listTable indexPathForCell:tableViewCell];
+    XWDiscoverModel *cellModel = [_dataSource objectAtIndex:indexPath.row];
+    
+    SharingLinkWebController *sharingLinkVC =[[SharingLinkWebController alloc] init];
+    [sharingLinkVC setLinkStr:cellModel.shareModel.urlStr];
+    [self.navigationController pushViewController:sharingLinkVC animated:YES];
+    
 }
 /**
  *  点击视频播放操作
@@ -217,6 +240,10 @@
     //初始化cell数据!
     [cell loadDataSourceWithIndexPath:indexPath];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"当前点击的是%ld行-》",indexPath.row);
 }
 
 

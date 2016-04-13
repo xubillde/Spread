@@ -113,6 +113,10 @@
 		2E824D721CAA650C00C5B668 /* UIView+CurrentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E824D711CAA650B00C5B668 /* UIView+CurrentController.m */; };
 		2E9092E61CB3BC9F007FE517 /* DiscoverMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */; };
 		2E91F1A21CA0F29800AFC942 /* XWCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E91F1A11CA0F29800AFC942 /* XWCardView.m */; };
+		2E944E4B1CBE3283007B21EC /* crazyfire.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E944E4A1CBE3283007B21EC /* crazyfire.png */; };
+		2E944E4D1CBE33B5007B21EC /* iconMM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2E944E4C1CBE33B5007B21EC /* iconMM.jpg */; };
+		2E944E511CBE4845007B21EC /* XWScanImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E944E501CBE4845007B21EC /* XWScanImage.m */; };
+		2E944E541CBE677C007B21EC /* SharingLinkWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E944E531CBE677C007B21EC /* SharingLinkWebController.m */; };
 		2EA75AB01CA4ADB900803638 /* XWRadarIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA75AAB1CA4ADB900803638 /* XWRadarIndicatorView.m */; };
 		2EA75AB11CA4ADB900803638 /* XWRadarPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA75AAD1CA4ADB900803638 /* XWRadarPointView.m */; };
 		2EA75AB21CA4ADB900803638 /* XWRadarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA75AAF1CA4ADB900803638 /* XWRadarView.m */; };
@@ -376,6 +380,12 @@
 		2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverMainController.m; sourceTree = "<group>"; };
 		2E91F1A01CA0F29800AFC942 /* XWCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWCardView.h; sourceTree = "<group>"; };
 		2E91F1A11CA0F29800AFC942 /* XWCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWCardView.m; sourceTree = "<group>"; };
+		2E944E4A1CBE3283007B21EC /* crazyfire.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crazyfire.png; sourceTree = "<group>"; };
+		2E944E4C1CBE33B5007B21EC /* iconMM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconMM.jpg; sourceTree = "<group>"; };
+		2E944E4F1CBE4845007B21EC /* XWScanImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWScanImage.h; sourceTree = "<group>"; };
+		2E944E501CBE4845007B21EC /* XWScanImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWScanImage.m; sourceTree = "<group>"; };
+		2E944E521CBE677C007B21EC /* SharingLinkWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharingLinkWebController.h; sourceTree = "<group>"; };
+		2E944E531CBE677C007B21EC /* SharingLinkWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharingLinkWebController.m; sourceTree = "<group>"; };
 		2EA75AAA1CA4ADB900803638 /* XWRadarIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWRadarIndicatorView.h; sourceTree = "<group>"; };
 		2EA75AAB1CA4ADB900803638 /* XWRadarIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XWRadarIndicatorView.m; sourceTree = "<group>"; };
 		2EA75AAC1CA4ADB900803638 /* XWRadarPointView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XWRadarPointView.h; sourceTree = "<group>"; };
@@ -1011,6 +1021,7 @@
 		2E9092E01CB3BB9F007FE517 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				2E944E4E1CBE47B6007B21EC /* XWScanImage */,
 				2EB043B21CB4EDF600F55543 /* XWDiscover */,
 				2E9092E11CB3BB9F007FE517 /* Controller */,
 				2E9092E21CB3BB9F007FE517 /* Model */,
@@ -1024,6 +1035,8 @@
 			children = (
 				2E9092E41CB3BC9F007FE517 /* DiscoverMainController.h */,
 				2E9092E51CB3BC9F007FE517 /* DiscoverMainController.m */,
+				2E944E521CBE677C007B21EC /* SharingLinkWebController.h */,
+				2E944E531CBE677C007B21EC /* SharingLinkWebController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1040,6 +1053,15 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2E944E4E1CBE47B6007B21EC /* XWScanImage */ = {
+			isa = PBXGroup;
+			children = (
+				2E944E4F1CBE4845007B21EC /* XWScanImage.h */,
+				2E944E501CBE4845007B21EC /* XWScanImage.m */,
+			);
+			path = XWScanImage;
 			sourceTree = "<group>";
 		};
 		2EA75AA81CA4ADB900803638 /* XWAnnotation */ = {
@@ -1376,6 +1398,8 @@
 		2EBB4E321CA0E56700889732 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E944E4C1CBE33B5007B21EC /* iconMM.jpg */,
+				2E944E4A1CBE3283007B21EC /* crazyfire.png */,
 				2E22E1A71CA249A8002CC9A1 /* qinaideNizaina.png */,
 				2EAA03621CA1995200874396 /* SearchImage0.png */,
 				2E3B945E1CA12B9200DE1B79 /* 邱_生活.JPG */,
@@ -1587,11 +1611,13 @@
 				2EEDC35A1CAB8AB200838882 /* button-link.png in Resources */,
 				2EEDC3581CAB8AB200838882 /* button-chat@2x.png in Resources */,
 				2EBB4E391CA0E56700889732 /* huaban.png in Resources */,
+				2E944E4D1CBE33B5007B21EC /* iconMM.jpg in Resources */,
 				2EAC85681C9F964C0044CAF6 /* PersonController.xib in Resources */,
 				2EAC85341C9F90100044CAF6 /* Main.storyboard in Resources */,
 				2E22E1A81CA249A8002CC9A1 /* qinaideNizaina.png in Resources */,
 				2EEDC35D1CAB8AB200838882 /* button-text.png in Resources */,
 				2E1701B11C9FE9AF00564C89 /* OneDetailsController.xib in Resources */,
+				2E944E4B1CBE3283007B21EC /* crazyfire.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1715,6 +1741,7 @@
 				2E1702741C9FEFAD00564C89 /* MJRefreshHeader.m in Sources */,
 				2E1702011C9FEABE00564C89 /* UIImageView+HighlightedWebCache.m in Sources */,
 				2EAC85761C9F97830044CAF6 /* RankingController.m in Sources */,
+				2E944E541CBE677C007B21EC /* SharingLinkWebController.m in Sources */,
 				2E22E1AD1CA25976002CC9A1 /* LinkPersonController.m in Sources */,
 				2E1701FF1C9FEABE00564C89 /* UIImage+MultiFormat.m in Sources */,
 				2EA75AB21CA4ADB900803638 /* XWRadarView.m in Sources */,
@@ -1742,6 +1769,7 @@
 				2E1701AF1C9FE9AF00564C89 /* DiffusionController.m in Sources */,
 				2E1701BE1C9FE9AF00564C89 /* JumpButton.m in Sources */,
 				2EAC85931C9FC1BE0044CAF6 /* CustomTabBarButton.m in Sources */,
+				2E944E511CBE4845007B21EC /* XWScanImage.m in Sources */,
 				2ECC38671CA9063400FFFDAA /* XWAlertViewController.m in Sources */,
 				2ECC385B1CA8C46E00FFFDAA /* XWBlueToothManger.m in Sources */,
 				2E17027D1C9FEFAD00564C89 /* MJRefreshStateHeader.m in Sources */,

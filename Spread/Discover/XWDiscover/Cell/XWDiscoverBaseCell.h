@@ -97,4 +97,5 @@
 /** 计算对应内容显示的高度 */
 +(CGFloat)countHeightWithGroupCellModel:(XWDiscoverModel *)model width:(CGFloat)width;
 
+-(XWDiscoverModel *)getCurrentModel;
 @end

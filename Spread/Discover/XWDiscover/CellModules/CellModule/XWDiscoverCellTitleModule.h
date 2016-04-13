@@ -8,8 +8,12 @@
 
 #import "XWDiscoverCellBaseModule.h"
 
-@interface XWDiscoverCellTitleModule : XWDiscoverCellBaseModule
+@interface XWDiscoverCellTitleModule : XWDiscoverCellBaseModule{
+    //头像
+//    UIImageView *headIcon;
+}
 
+@property (nonatomic, strong) UIImageView *headIcon;
 /**
  *  点击头像block
  */
@@ -22,5 +26,7 @@
  *  设置数据模型
  */
 -(void)setDataWithModel:(XWDiscoverTitleModel *)model;
+
+
 
 @end

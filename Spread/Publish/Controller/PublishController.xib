@@ -165,23 +165,23 @@
                     <exclude reference="tsk-wb-WUg"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="GHx-tf-qTC"/>
-                    <exclude reference="cyR-od-eGr"/>
-                    <exclude reference="lxc-op-8ra"/>
-                    <exclude reference="mZG-Zh-qqF"/>
-                    <exclude reference="3Ud-ui-GUv"/>
-                    <exclude reference="4mv-dM-sem"/>
-                    <exclude reference="GkN-cd-BFx"/>
-                    <exclude reference="W4R-eK-bw9"/>
-                    <exclude reference="jjU-MN-xfe"/>
                     <exclude reference="Nw0-BM-2i6"/>
                     <exclude reference="TeV-Rf-bW7"/>
                     <exclude reference="gTY-ui-1Ae"/>
                     <exclude reference="6TN-mu-eZe"/>
                     <exclude reference="PoM-2z-nh0"/>
+                    <exclude reference="W4R-eK-bw9"/>
+                    <exclude reference="jjU-MN-xfe"/>
+                    <exclude reference="3Ud-ui-GUv"/>
+                    <exclude reference="4mv-dM-sem"/>
+                    <exclude reference="GkN-cd-BFx"/>
                     <exclude reference="jYv-Mb-hwL"/>
                     <exclude reference="lwL-gV-pO0"/>
                     <exclude reference="qW8-jZ-CgZ"/>
+                    <exclude reference="GHx-tf-qTC"/>
+                    <exclude reference="cyR-od-eGr"/>
+                    <exclude reference="lxc-op-8ra"/>
+                    <exclude reference="mZG-Zh-qqF"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -195,23 +195,23 @@
                     <include reference="tsk-wb-WUg"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="GHx-tf-qTC"/>
-                    <include reference="cyR-od-eGr"/>
-                    <include reference="lxc-op-8ra"/>
-                    <include reference="mZG-Zh-qqF"/>
-                    <include reference="3Ud-ui-GUv"/>
-                    <include reference="4mv-dM-sem"/>
-                    <include reference="GkN-cd-BFx"/>
-                    <include reference="W4R-eK-bw9"/>
-                    <include reference="jjU-MN-xfe"/>
                     <include reference="Nw0-BM-2i6"/>
                     <include reference="TeV-Rf-bW7"/>
                     <include reference="gTY-ui-1Ae"/>
                     <include reference="6TN-mu-eZe"/>
                     <include reference="PoM-2z-nh0"/>
+                    <include reference="W4R-eK-bw9"/>
+                    <include reference="jjU-MN-xfe"/>
+                    <include reference="3Ud-ui-GUv"/>
+                    <include reference="4mv-dM-sem"/>
+                    <include reference="GkN-cd-BFx"/>
                     <include reference="jYv-Mb-hwL"/>
                     <include reference="lwL-gV-pO0"/>
                     <include reference="qW8-jZ-CgZ"/>
+                    <include reference="GHx-tf-qTC"/>
+                    <include reference="cyR-od-eGr"/>
+                    <include reference="lxc-op-8ra"/>
+                    <include reference="mZG-Zh-qqF"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="268.5" y="271.5"/>

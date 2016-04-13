@@ -51,7 +51,7 @@
             UIImage *iconImage = [UIImage imageWithData:iconImageData];
             [_headerImageView setImage:iconImage];
         }else{
-            [_headerImageView setImage:[UIImage imageNamed:@"邱_生活.JPG"]];
+            [_headerImageView setImage:[UIImage imageNamed:@"iconMM.jpg"]];
         }
         [_headerImageView setBackgroundColor:[UIColor greenColor]];
         [_headerImageView setContentMode:UIViewContentModeScaleAspectFill];

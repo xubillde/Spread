@@ -10,7 +10,7 @@
 
 @interface XWDiscoverCellTitleModule (){
     //头像
-    UIImageView *headIcon;
+//    UIImageView *self.headIcon;
     //昵称label
     UILabel *userNameLB;
     //发布时间
@@ -33,18 +33,18 @@
         /**
          *头像
          */
-        headIcon = [[UIImageView alloc] init];
-        [headIcon setBackgroundColor:[UIColor clearColor]];
-        [headIcon setUserInteractionEnabled:YES];
+        self.headIcon = [[UIImageView alloc] init];
+        [self.headIcon setBackgroundColor:[UIColor clearColor]];
+        [self.headIcon setUserInteractionEnabled:YES];
         //设置圆角
-        [headIcon.layer setCornerRadius:15.0f];
-        [headIcon.layer setMasksToBounds:YES];
-        [headIcon.layer setShouldRasterize:YES];
-        [headIcon.layer setRasterizationScale:[UIScreen mainScreen].scale];
+        [self.headIcon.layer setCornerRadius:15.0f];
+        [self.headIcon.layer setMasksToBounds:YES];
+        [self.headIcon.layer setShouldRasterize:YES];
+        [self.headIcon.layer setRasterizationScale:[UIScreen mainScreen].scale];
         //点击事件
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapHead:)];
-        [headIcon addGestureRecognizer:tapGestureRecognizer];
-        [self addSubview:headIcon];
+        [self.headIcon addGestureRecognizer:tapGestureRecognizer];
+        [self addSubview:self.headIcon];
         
         
         /**
@@ -96,7 +96,7 @@
  */
 -(void)refreshViewData{
     //载入头像
-    self.loadImageBlock(headIcon, dataSourceModel.headIocnUrlStr, load_default_head);
+    self.loadImageBlock(self.headIcon, dataSourceModel.headIocnUrlStr, load_default_head);
     [userNameLB setText:dataSourceModel.userName];
     [timeLB setText:dataSourceModel.time];
     //标记为需要重新布局，不立即刷新，但layoutSubviews一定会被调用,配合layoutIfNeeded立即更新
@@ -108,11 +108,11 @@
     [super layoutSubviews];
     
     //头像,
-    [headIcon setFrame:CGRectMake(12, 10, 30, 30)];
+    [self.headIcon setFrame:CGRectMake(12, 10, 30, 30)];
     
     //昵称
 //    CGSize userNameSize = [userNameLB.text sizeWithFont:userNameLB.font constrainedToSize:CGSizeMake(CGFLOAT_MAX, 15) lineBreakMode:userNameLB.lineBreakMode];
-//    [userNameLB setFrame:CGRectMake(CGRectGetMaxX(headIcon.frame) + 10, 10, userNameSize.width, userNameSize.height)];
+//    [userNameLB setFrame:CGRectMake(CGRectGetMaxX(self.headIcon.frame) + 10, 10, userNameSize.width, userNameSize.height)];
     
     
     
@@ -122,10 +122,10 @@
 //    CGSize userNameLBSize = [userNameLB.text sizeWithFont:userNameLB.font constrainedToSize:CGSizeMake(CGFLOAT_MAX, 15) lineBreakMode:userNameLB.lineBreakMode];
     
     CGRect userNameLBRect = [userNameLB.text boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, 15) options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading | NSStringDrawingUsesFontLeading attributes:attributes context:nil];
-    [userNameLB setFrame:CGRectMake(CGRectGetMaxX(headIcon.frame) + 10, 10, userNameLBRect.size.width, userNameLBRect.size.height)];
+    [userNameLB setFrame:CGRectMake(CGRectGetMaxX(self.headIcon.frame) + 10, 10, userNameLBRect.size.width, userNameLBRect.size.height)];
     
     //发布时间
-    [timeLB setFrame:CGRectMake(CGRectGetMaxX(headIcon.frame) + 10, CGRectGetMaxY(userNameLB.frame) + 5, 90, 11)];
+    [timeLB setFrame:CGRectMake(CGRectGetMaxX(self.headIcon.frame) + 10, CGRectGetMaxY(userNameLB.frame) + 5, 90, 11)];
 }
 
 
