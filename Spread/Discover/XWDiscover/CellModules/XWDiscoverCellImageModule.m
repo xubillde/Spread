@@ -82,6 +82,11 @@
                 //实际展示宽高比例和图片宽高比例相同进而求出图片模块实际高度 a/b = A/B
                 CGFloat realShowHeight = imageHeight * realShowWidth / imageWidth;
                 if (realShowHeight > realShowWidth) {
+                    
+                    //
+                    realShowHeight = realShowWidth;
+                    realShowWidth = imageWidth * realShowWidth / imageHeight;
+                    
                     //isnan(x)可以判断是否不是一个数字
                     if (isnan(realShowWidth)) {
                         realShowWidth = 0.0f;

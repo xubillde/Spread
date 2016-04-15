@@ -37,9 +37,10 @@
     _quoteButton.frame = frame;
     [_quoteButton setBackgroundImage:[UIImage imageNamed:@"button-link"] forState:UIControlStateNormal];
     
-//    _linkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-//    _linkButton.frame = frame;
-//    [_linkButton setBackgroundImage:[UIImage imageNamed:@"button-link"] forState:UIControlStateNormal];
+    //-------
+    _linkButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _linkButton.frame = frame;
+    [_linkButton setBackgroundImage:[UIImage imageNamed:@"button-link"] forState:UIControlStateNormal];
     
     _chatButton = [UIButton buttonWithType:UIButtonTypeCustom];
     _chatButton.frame = frame;
@@ -113,18 +114,20 @@
     [_textButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
     [_photoButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
     [_quoteButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
-//    [_linkButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
-//    [_chatButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
-//    [_videoButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
+    //-------
+    [_linkButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
+    [_chatButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
+    [_videoButton addTarget:self action:@selector(clickMenu:) forControlEvents:UIControlEventTouchUpInside];
     
     //添加子视图!
     [self addSubview:_backgroundView];
     [self addSubview:_textButton];
     [self addSubview:_photoButton];
     [self addSubview:_quoteButton];
-//    [self addSubview:_linkButton];
-//    [self addSubview:_chatButton];
-//    [self addSubview:_videoButton];
+    //-------
+    [self addSubview:_linkButton];
+    [self addSubview:_chatButton];
+    [self addSubview:_videoButton];
     [self addSubview:_nevermindButton];
 }
 
@@ -178,7 +181,7 @@
         
         _textButton.center =  [_centerHigh[0] CGPointValue];
         _quoteButton.center = [_centerHigh[2] CGPointValue];
-//        _chatButton.center =  [_centerHigh[1] CGPointValue];
+        _chatButton.center =  [_centerHigh[1] CGPointValue];
         
     } completion:^(BOOL finished) {
         
@@ -232,20 +235,20 @@
         
         _textButton.center =  [_centerLow[0] CGPointValue];
         _quoteButton.center = [_centerLow[2] CGPointValue];
-//        _chatButton.center =  [_centerLow[1] CGPointValue];
+        _chatButton.center =  [_centerLow[1] CGPointValue];
         
     } completion:^(BOOL finished) {
         
     }];
     
-    /*   Link | Video Image  */
-//    _photoButton.center = [ _centerHigh[1] CGPointValue];
-//    [UIView animateWithDuration:0.6 delay:0.2 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-//        _linkButton.center = [_centerLow[0] CGPointValue];
-//        _videoButton.center = [_centerLow[2] CGPointValue];
-//    } completion:^(BOOL finished) {
-//        
-//    }];
+//       Link | Video Image  
+    _photoButton.center = [ _centerHigh[1] CGPointValue];
+    [UIView animateWithDuration:0.6 delay:0.2 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        _linkButton.center = [_centerLow[0] CGPointValue];
+        _videoButton.center = [_centerLow[2] CGPointValue];
+    } completion:^(BOOL finished) {
+        
+    }];
     
     
 }
@@ -274,12 +277,12 @@
     /*  Text | Chat | Quote Image   */
     _textButton.center = [_centerLow[0] CGPointValue];
     _quoteButton.center = [_centerLow[2] CGPointValue];
-//    _chatButton.center = [_centerLow [1] CGPointValue];
+    _chatButton.center = [_centerLow [1] CGPointValue];
     [UIView animateWithDuration:0.6 delay:0.1 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         
         _textButton.center = [_centerMenu[0] CGPointValue];
         _quoteButton.center = [_centerMenu[2] CGPointValue];
-//        _chatButton.center = [_centerMenu[4] CGPointValue];
+        _chatButton.center = [_centerMenu[4] CGPointValue];
     } completion:^(BOOL finished) {
         
     }];
@@ -287,13 +290,13 @@
     
 //    /*   Link | Video Image  */
 //    
-//    _linkButton.center = [_centerLow[0] CGPointValue];
-//    _videoButton.center = [_centerLow [2] CGPointValue];
-//    [UIView animateWithDuration:0.6 delay:0.2 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
-//        _linkButton.center = [_centerMenu[3] CGPointValue];
-//        _videoButton.center = [_centerMenu[5] CGPointValue];
-//    } completion:^(BOOL finished) {
-//        
-//    }];
+    _linkButton.center = [_centerLow[0] CGPointValue];
+    _videoButton.center = [_centerLow [2] CGPointValue];
+    [UIView animateWithDuration:0.6 delay:0.2 usingSpringWithDamping:0.7 initialSpringVelocity:1.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        _linkButton.center = [_centerMenu[3] CGPointValue];
+        _videoButton.center = [_centerMenu[5] CGPointValue];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 @end

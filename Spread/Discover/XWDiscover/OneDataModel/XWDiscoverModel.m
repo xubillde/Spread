@@ -96,7 +96,7 @@
         }
             break;
         case 1:{
-            [discoverModel setShareModel:[XWDiscoverShareModel getShreModelWithThumImageUrlStr:@"http://pic.baomihua.com/photos/201104/m_634376313000085000_40197732.jpg" withTitle: @"这是分享模块model分享模块model分享模块model分享模块model" withSummary:@"疯火科技,疯火科技,这是疯火科技哈~~n疯火科技,疯火科技,这是疯火科技哈~isi疯火科技,疯火科技,这是疯火科技哈~owo疯火科技,疯火科技,这是疯火科技哈~" withUrlStr:@"www.crazyfire.love"]];
+            [discoverModel setShareModel:[XWDiscoverShareModel getShreModelWithThumImageUrlStr:@"http://pic.baomihua.com/photos/201104/m_634376313000085000_40197732.jpg" withTitle: @"这是分享模块model分享模块model分享模块model分享模块model" withSummary:@"疯火科技,疯火科技,这是疯火科技哈~~n疯火科技,疯火科技,这是疯火科技哈~isi疯火科技,疯火科技,这是疯火科技哈~owo疯火科技,疯火科技,这是疯火科技哈~" withUrlStr:@"http://www.crazyfire.love"]];
         }
             break;
         case 2:{
@@ -262,7 +262,7 @@
     testModel.thumImageUrlStr = @"http://pic.baomihua.com/photos/201104/m_634376313000085000_40197732.jpg";
     testModel.title = @"这是分享模块model";
     testModel.summary = @"疯火科技,疯火科技,这是疯火科技哈~~";
-    testModel.urlStr =  @"www.crazyfire.love";
+    testModel.urlStr =  @"http://www.crazyfire.love";
     return testModel;
 }
 

@@ -21,7 +21,8 @@
 #pragma mark - 懒加载
 -(WKWebView *)WKWebView{
     if (_WKWebView == nil) {
-        _WKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64)];
+        _WKWebView = [[WKWebView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight-64-44)];
+        NSLog(@"链接：%@",self.linkStr);
         NSURL *comURL = [NSURL URLWithString:self.linkStr];
         NSURLRequest *request = [NSURLRequest requestWithURL:comURL];
         [_WKWebView setNavigationDelegate:self];

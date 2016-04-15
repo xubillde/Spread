@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E1525741CBF67EA00D0B933 /* UIImage+UzysExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525641CBF67EA00D0B933 /* UIImage+UzysExtension.m */; };
+		2E1525751CBF67EA00D0B933 /* UzysAppearanceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525661CBF67EA00D0B933 /* UzysAppearanceConfig.m */; };
+		2E1525761CBF67EA00D0B933 /* UzysAssetPickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E1525671CBF67EA00D0B933 /* UzysAssetPickerController.bundle */; };
+		2E1525771CBF67EA00D0B933 /* UzysAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525691CBF67EA00D0B933 /* UzysAssetsPickerController.m */; };
+		2E1525781CBF67EA00D0B933 /* UzysAssetsPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E15256A1CBF67EA00D0B933 /* UzysAssetsPickerController.xib */; };
+		2E1525791CBF67EA00D0B933 /* UzysAssetsViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15256D1CBF67EA00D0B933 /* UzysAssetsViewCell.m */; };
+		2E15257A1CBF67EA00D0B933 /* UzysGroupPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15256F1CBF67EA00D0B933 /* UzysGroupPickerView.m */; };
+		2E15257B1CBF67EA00D0B933 /* UzysGroupViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525711CBF67EA00D0B933 /* UzysGroupViewCell.m */; };
+		2E15257C1CBF67EA00D0B933 /* UzysWrapperPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1525731CBF67EA00D0B933 /* UzysWrapperPickerController.m */; };
+		2E15257F1CBF6B9D00D0B933 /* PublicPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15257E1CBF6B9D00D0B933 /* PublicPhotoController.m */; };
+		2E1525811CBF6DB600D0B933 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1525801CBF6DB600D0B933 /* AVFoundation.framework */; };
+		2E1525831CBF6DC000D0B933 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1525821CBF6DC000D0B933 /* MobileCoreServices.framework */; };
+		2E1525851CBF6DCA00D0B933 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1525841CBF6DCA00D0B933 /* AssetsLibrary.framework */; };
 		2E1701AE1C9FE9AE00564C89 /* DetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17016A1C9FE9AE00564C89 /* DetailsController.m */; };
 		2E1701AF1C9FE9AF00564C89 /* DiffusionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17016C1C9FE9AE00564C89 /* DiffusionController.m */; };
 		2E1701B01C9FE9AF00564C89 /* OneDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E17016E1C9FE9AE00564C89 /* OneDetailsController.m */; };
@@ -187,6 +200,28 @@
 
 /* Begin PBXFileReference section */
 		104CCF30DC6AC6F8EA83EB34 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2E1525631CBF67EA00D0B933 /* UIImage+UzysExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+UzysExtension.h"; sourceTree = "<group>"; };
+		2E1525641CBF67EA00D0B933 /* UIImage+UzysExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+UzysExtension.m"; sourceTree = "<group>"; };
+		2E1525651CBF67EA00D0B933 /* UzysAppearanceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAppearanceConfig.h; sourceTree = "<group>"; };
+		2E1525661CBF67EA00D0B933 /* UzysAppearanceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysAppearanceConfig.m; sourceTree = "<group>"; };
+		2E1525671CBF67EA00D0B933 /* UzysAssetPickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UzysAssetPickerController.bundle; sourceTree = "<group>"; };
+		2E1525681CBF67EA00D0B933 /* UzysAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAssetsPickerController.h; sourceTree = "<group>"; };
+		2E1525691CBF67EA00D0B933 /* UzysAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysAssetsPickerController.m; sourceTree = "<group>"; };
+		2E15256A1CBF67EA00D0B933 /* UzysAssetsPickerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UzysAssetsPickerController.xib; sourceTree = "<group>"; };
+		2E15256B1CBF67EA00D0B933 /* UzysAssetsPickerController_Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAssetsPickerController_Configuration.h; sourceTree = "<group>"; };
+		2E15256C1CBF67EA00D0B933 /* UzysAssetsViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysAssetsViewCell.h; sourceTree = "<group>"; };
+		2E15256D1CBF67EA00D0B933 /* UzysAssetsViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysAssetsViewCell.m; sourceTree = "<group>"; };
+		2E15256E1CBF67EA00D0B933 /* UzysGroupPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysGroupPickerView.h; sourceTree = "<group>"; };
+		2E15256F1CBF67EA00D0B933 /* UzysGroupPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysGroupPickerView.m; sourceTree = "<group>"; };
+		2E1525701CBF67EA00D0B933 /* UzysGroupViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysGroupViewCell.h; sourceTree = "<group>"; };
+		2E1525711CBF67EA00D0B933 /* UzysGroupViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysGroupViewCell.m; sourceTree = "<group>"; };
+		2E1525721CBF67EA00D0B933 /* UzysWrapperPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UzysWrapperPickerController.h; sourceTree = "<group>"; };
+		2E1525731CBF67EA00D0B933 /* UzysWrapperPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UzysWrapperPickerController.m; sourceTree = "<group>"; };
+		2E15257D1CBF6B9D00D0B933 /* PublicPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicPhotoController.h; sourceTree = "<group>"; };
+		2E15257E1CBF6B9D00D0B933 /* PublicPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicPhotoController.m; sourceTree = "<group>"; };
+		2E1525801CBF6DB600D0B933 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2E1525821CBF6DC000D0B933 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2E1525841CBF6DCA00D0B933 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		2E1701691C9FE9AE00564C89 /* DetailsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsController.h; sourceTree = "<group>"; };
 		2E17016A1C9FE9AE00564C89 /* DetailsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsController.m; sourceTree = "<group>"; };
 		2E17016B1C9FE9AE00564C89 /* DiffusionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiffusionController.h; sourceTree = "<group>"; };
@@ -500,6 +535,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1525851CBF6DCA00D0B933 /* AssetsLibrary.framework in Frameworks */,
+				2E1525831CBF6DC000D0B933 /* MobileCoreServices.framework in Frameworks */,
+				2E1525811CBF6DB600D0B933 /* AVFoundation.framework in Frameworks */,
 				2EAA035F1CA1911100874396 /* AMapLocationKit.framework in Frameworks */,
 				2E3B945D1CA1216400DE1B79 /* Security.framework in Frameworks */,
 				2E3B945B1CA1215B00DE1B79 /* libc++.tbd in Frameworks */,
@@ -521,6 +559,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E1525621CBF67EA00D0B933 /* UzyPhotoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2E1525631CBF67EA00D0B933 /* UIImage+UzysExtension.h */,
+				2E1525641CBF67EA00D0B933 /* UIImage+UzysExtension.m */,
+				2E1525651CBF67EA00D0B933 /* UzysAppearanceConfig.h */,
+				2E1525661CBF67EA00D0B933 /* UzysAppearanceConfig.m */,
+				2E1525671CBF67EA00D0B933 /* UzysAssetPickerController.bundle */,
+				2E1525681CBF67EA00D0B933 /* UzysAssetsPickerController.h */,
+				2E1525691CBF67EA00D0B933 /* UzysAssetsPickerController.m */,
+				2E15256A1CBF67EA00D0B933 /* UzysAssetsPickerController.xib */,
+				2E15256B1CBF67EA00D0B933 /* UzysAssetsPickerController_Configuration.h */,
+				2E15256C1CBF67EA00D0B933 /* UzysAssetsViewCell.h */,
+				2E15256D1CBF67EA00D0B933 /* UzysAssetsViewCell.m */,
+				2E15256E1CBF67EA00D0B933 /* UzysGroupPickerView.h */,
+				2E15256F1CBF67EA00D0B933 /* UzysGroupPickerView.m */,
+				2E1525701CBF67EA00D0B933 /* UzysGroupViewCell.h */,
+				2E1525711CBF67EA00D0B933 /* UzysGroupViewCell.m */,
+				2E1525721CBF67EA00D0B933 /* UzysWrapperPickerController.h */,
+				2E1525731CBF67EA00D0B933 /* UzysWrapperPickerController.m */,
+			);
+			path = UzyPhotoLibrary;
+			sourceTree = "<group>";
+		};
 		2E1701671C9FE9AE00564C89 /* Diffusion */ = {
 			isa = PBXGroup;
 			children = (
@@ -1171,6 +1233,7 @@
 		2EAC85461C9F92620044CAF6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2E1525621CBF67EA00D0B933 /* UzyPhotoLibrary */,
 				2E22E1AF1CA26DB6002CC9A1 /* VPImageCropper */,
 				2EF79CB91CA03DBD0071D90C /* ZXPUnicode */,
 				2E1702431C9FEFAD00564C89 /* MJRefresh */,
@@ -1315,6 +1378,8 @@
 				2EAC85811C9F998A0044CAF6 /* PublishController.h */,
 				2EAC85821C9F998A0044CAF6 /* PublishController.m */,
 				2EAC85831C9F998A0044CAF6 /* PublishController.xib */,
+				2E15257D1CBF6B9D00D0B933 /* PublicPhotoController.h */,
+				2E15257E1CBF6B9D00D0B933 /* PublicPhotoController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1501,6 +1566,9 @@
 		509D31E2032FA4FEBCABB14E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2E1525841CBF6DCA00D0B933 /* AssetsLibrary.framework */,
+				2E1525821CBF6DC000D0B933 /* MobileCoreServices.framework */,
+				2E1525801CBF6DB600D0B933 /* AVFoundation.framework */,
 				6F01BCC34AA6640DF10E1E65 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -1583,6 +1651,7 @@
 				2EBB4E371CA0E56700889732 /* Back.png in Resources */,
 				2EAA03631CA1995200874396 /* SearchImage0.png in Resources */,
 				2EAC85391C9F90100044CAF6 /* LaunchScreen.storyboard in Resources */,
+				2E1525761CBF67EA00D0B933 /* UzysAssetPickerController.bundle in Resources */,
 				2E3B945F1CA12B9200DE1B79 /* 邱_生活.JPG in Resources */,
 				2EEDC3591CAB8AB200838882 /* button-chat@3x.png in Resources */,
 				2EAC85851C9F998A0044CAF6 /* PublishController.xib in Resources */,
@@ -1609,6 +1678,7 @@
 				2EAC85361C9F90100044CAF6 /* Assets.xcassets in Resources */,
 				2EAC85771C9F97830044CAF6 /* RankingController.xib in Resources */,
 				2EEDC35A1CAB8AB200838882 /* button-link.png in Resources */,
+				2E1525781CBF67EA00D0B933 /* UzysAssetsPickerController.xib in Resources */,
 				2EEDC3581CAB8AB200838882 /* button-chat@2x.png in Resources */,
 				2EBB4E391CA0E56700889732 /* huaban.png in Resources */,
 				2E944E4D1CBE33B5007B21EC /* iconMM.jpg in Resources */,
@@ -1684,6 +1754,7 @@
 				2E17022A1C9FEF0500564C89 /* OneDiffusionDetails.m in Sources */,
 				2EAC85491C9F92620044CAF6 /* ViewController.m in Sources */,
 				2E17027F1C9FEFAD00564C89 /* MJRefreshConst.m in Sources */,
+				2E1525791CBF67EA00D0B933 /* UzysAssetsViewCell.m in Sources */,
 				2E1701C01C9FE9AF00564C89 /* LRRadarIndicatorView.m in Sources */,
 				2EB043BB1CB5175B00F55543 /* XWDiscoverBaseCell.m in Sources */,
 				2E1701BC1C9FE9AF00564C89 /* CXCardContainerView.m in Sources */,
@@ -1692,16 +1763,19 @@
 				2E1702771C9FEFAD00564C89 /* MJRefreshAutoStateFooter.m in Sources */,
 				2ECC386A1CA92FB000FFFDAA /* BuyCrzayfireController.m in Sources */,
 				2EA75AB11CA4ADB900803638 /* XWRadarPointView.m in Sources */,
+				2E15257A1CBF67EA00D0B933 /* UzysGroupPickerView.m in Sources */,
 				2E1702801C9FEFAD00564C89 /* UIScrollView+MJExtension.m in Sources */,
 				2E1702721C9FEFAD00564C89 /* MJRefreshComponent.m in Sources */,
 				2E1701C11C9FE9AF00564C89 /* LRRadarPointView.m in Sources */,
 				2E3B94791CA14E8D00DE1B79 /* LocationSetUpController.m in Sources */,
 				2E1701F61C9FEABE00564C89 /* SDImageCache.m in Sources */,
 				2E17027B1C9FEFAD00564C89 /* MJRefreshGifHeader.m in Sources */,
+				2E1525771CBF67EA00D0B933 /* UzysAssetsPickerController.m in Sources */,
 				2E3B94751CA1471700DE1B79 /* RadarController.m in Sources */,
 				2EB043BE1CB5F70300F55543 /* XWDiscoverCellBaseModule.m in Sources */,
 				2E1702811C9FEFAD00564C89 /* UIScrollView+MJRefresh.m in Sources */,
 				2EAC855E1C9F96150044CAF6 /* BaseViewController.m in Sources */,
+				2E15257C1CBF67EA00D0B933 /* UzysWrapperPickerController.m in Sources */,
 				2ECC38631CA8C50800FFFDAA /* XWBlueToothController.m in Sources */,
 				2E1701F51C9FEABE00564C89 /* NSData+ImageContentType.m in Sources */,
 				2E1701C91C9FE9AF00564C89 /* ViewManager.m in Sources */,
@@ -1712,6 +1786,7 @@
 				2EA75AB51CA4AE4D00803638 /* XWAnnotationView.m in Sources */,
 				2E1701F41C9FEABE00564C89 /* MKAnnotationView+WebCache.m in Sources */,
 				2E1701C21C9FE9AF00564C89 /* LRRadarView.m in Sources */,
+				2E1525741CBF67EA00D0B933 /* UIImage+UzysExtension.m in Sources */,
 				2E1702021C9FEABE00564C89 /* UIImageView+WebCache.m in Sources */,
 				2E1702791C9FEFAD00564C89 /* MJRefreshBackNormalFooter.m in Sources */,
 				2E1701CD1C9FE9AF00564C89 /* DiffusionInView.m in Sources */,
@@ -1727,12 +1802,14 @@
 				2E1702781C9FEFAD00564C89 /* MJRefreshBackGifFooter.m in Sources */,
 				2E6F24701CA760C30032D246 /* PeripheralInfo.m in Sources */,
 				2EF79CC21CA03DBD0071D90C /* NSObject+ZXPUnicode.m in Sources */,
+				2E1525751CBF67EA00D0B933 /* UzysAppearanceConfig.m in Sources */,
 				2E1701BD1C9FE9AF00564C89 /* CXCardView.m in Sources */,
 				2E638D8F1CBB98CB00E62917 /* UIImage+Tool.m in Sources */,
 				2E1701CA1C9FE9AF00564C89 /* ZLSwipeableView.m in Sources */,
 				2EAC85481C9F92620044CAF6 /* main.m in Sources */,
 				2E17027A1C9FEFAD00564C89 /* MJRefreshBackStateFooter.m in Sources */,
 				2E1702761C9FEFAD00564C89 /* MJRefreshAutoNormalFooter.m in Sources */,
+				2E15257F1CBF6B9D00D0B933 /* PublicPhotoController.m in Sources */,
 				2EA75AB01CA4ADB900803638 /* XWRadarIndicatorView.m in Sources */,
 				2E1701F71C9FEABE00564C89 /* SDWebImageCompat.m in Sources */,
 				2EE61C951CB74606009C2219 /* XWDiscoverCellTitleModule.m in Sources */,
@@ -1784,6 +1861,7 @@
 				2E1702701C9FEFAD00564C89 /* MJRefreshAutoFooter.m in Sources */,
 				2EAA035C1CA1904200874396 /* SearchPersonController.m in Sources */,
 				2EE61CA11CB78ECC009C2219 /* XWDiscoverCellCommentModule.m in Sources */,
+				2E15257B1CBF67EA00D0B933 /* UzysGroupViewCell.m in Sources */,
 				2E1701C51C9FE9AF00564C89 /* DefaultViewAnimator.m in Sources */,
 				2E1701D11C9FEA7400564C89 /* MBProgressHUD.m in Sources */,
 				2E824D721CAA650C00C5B668 /* UIView+CurrentController.m in Sources */,

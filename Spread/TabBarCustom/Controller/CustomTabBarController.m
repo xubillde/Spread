@@ -22,8 +22,11 @@
 #import "XWMenuPopView.h"
 #import "DiscoverMainController.h"
 
+//发布照片
+#import "PublishController.h"
+#import "UzysAssetsPickerController.h"
 
-@interface CustomTabBarController ()<MenuPopDelegate>{
+@interface CustomTabBarController ()<MenuPopDelegate,UzysAssetsPickerControllerDelegate>{
     
 }
 
@@ -145,6 +148,15 @@ static id _instance;
     
     //根据选中的不同按钮的tag判断进入相应的界面->
     
+    if (selectedIndex == 1) {
+        //发布照片
+        UzysAssetsPickerController *picker = [[UzysAssetsPickerController alloc] init];
+        picker.delegate = self;
+        [picker setMaximumNumberOfSelectionVideo:0];
+        [picker setMaximumNumberOfSelectionPhoto:9];
+        [self presentViewController:picker animated:YES completion:nil];
+    }
+    
     
     PublishController *publishVC = [[PublishController alloc] init];
     [publishVC.navigationItem setTitle:@"发布"];
@@ -211,31 +223,6 @@ static id _instance;
         
         self.viewControllers = @[discoverMainNav,rankingNav,radarNav,personNav];
     });
-    
-    
-//    self setViewControllers:<#(NSArray<__kindof UIViewController *> * _Nullable)#>
-//    [self addOneChildViewController:radarNav
-//                          WithTitle:@"雷达"
-//                          imageName:@"home_normal"
-//                  selectedImageName:@"home_highlight"];
-//    
-//    [self addOneChildViewController:rankingNav
-//                          WithTitle:@"热度"
-//                          imageName:@"mycity_normal"
-//                  selectedImageName:@"mycity_highlight"];
-//    
-//    
-//    [self addOneChildViewController:chattingNav
-//                          WithTitle:@"轨迹"
-//                          imageName:@"message_normal"
-//                  selectedImageName:@"message_highlight"];
-//    
-//    
-//    [self addOneChildViewController:personNav
-//                          WithTitle:@"个人信息"
-//                          imageName:@"account_normal"
-//                  selectedImageName:@"account_highlight"];
-    
 }
 
 /**
@@ -277,6 +264,81 @@ static id _instance;
     // Dispose of any resources that can be recreated.
 }
 
+
+#pragma mark - 发布照片相关
+
+#pragma mark - UzysAssetsPickerControllerDelegate methods
+- (void)uzysAssetsPickerController:(UzysAssetsPickerController *)picker didFinishPickingAssets:(NSArray *)assets
+{
+    NSLog(@"didFinishPickingAssets->>>assets.count:%ld",assets.count);
+//    self.imageView.backgroundColor = [UIColor clearColor];
+//    DLog(@"assets %@",assets);
+//    if(assets.count ==1)
+//    {
+//        self.labelDescription.text = [NSString stringWithFormat:@"%ld asset selected",(unsigned long)assets.count];
+//    }
+//    else
+//    {
+//        self.labelDescription.text = [NSString stringWithFormat:@"%ld assets selected",(unsigned long)assets.count];
+//    }
+//    __weak typeof(self) weakSelf = self;
+//    if([[assets[0] valueForProperty:@"ALAssetPropertyType"] isEqualToString:@"ALAssetTypePhoto"]) //Photo
+//    {
+//        [assets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+//            ALAsset *representation = obj;
+//            
+//            UIImage *img = [UIImage imageWithCGImage:representation.defaultRepresentation.fullResolutionImage
+//                                               scale:representation.defaultRepresentation.scale
+//                                         orientation:(UIImageOrientation)representation.defaultRepresentation.orientation];
+//            weakSelf.imageView.image = img;
+//            *stop = YES;
+//        }];
+//        
+//        
+//    }
+//    else //Video
+//    {
+//        ALAsset *alAsset = assets[0];
+//        
+//        UIImage *img = [UIImage imageWithCGImage:alAsset.defaultRepresentation.fullResolutionImage
+//                                           scale:alAsset.defaultRepresentation.scale
+//                                     orientation:(UIImageOrientation)alAsset.defaultRepresentation.orientation];
+//        weakSelf.imageView.image = img;
+//        
+//        
+//        
+//        ALAssetRepresentation *representation = alAsset.defaultRepresentation;
+//        NSURL *movieURL = representation.url;
+//        NSURL *uploadURL = [NSURL fileURLWithPath:[[NSTemporaryDirectory() stringByAppendingPathComponent:@"test"] stringByAppendingString:@".mp4"]];
+//        AVAsset *asset      = [AVURLAsset URLAssetWithURL:movieURL options:nil];
+//        AVAssetExportSession *session =
+//        [AVAssetExportSession exportSessionWithAsset:asset presetName:AVAssetExportPresetMediumQuality];
+//        
+//        session.outputFileType  = AVFileTypeQuickTimeMovie;
+//        session.outputURL       = uploadURL;
+//        
+//        [session exportAsynchronouslyWithCompletionHandler:^{
+//            
+//            if (session.status == AVAssetExportSessionStatusCompleted)
+//            {
+//                DLog(@"output Video URL %@",uploadURL);
+//            }
+//            
+//        }];
+//        
+//    }
+    
+}
+
+- (void)uzysAssetsPickerControllerDidExceedMaximumNumberOfSelection:(UzysAssetsPickerController *)picker
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                    message:NSLocalizedStringFromTable(@"Exceed Maximum Number Of Selection", @"UzysAssetsPickerController", nil)
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
 
 
 /*
