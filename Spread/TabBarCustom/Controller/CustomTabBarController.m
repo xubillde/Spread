@@ -14,6 +14,7 @@
 #import "PersonController.h"
 #import "PublishController.h"
 #import "LocusController.h"
+#import "XWPublishController.h"
 
 #import "CustomTabBar.h"
 //#import "DiffusionController.h"
@@ -158,7 +159,7 @@ static id _instance;
     }
     
     
-    PublishController *publishVC = [[PublishController alloc] init];
+    XWPublishController *publishVC = [[XWPublishController alloc] init];
     [publishVC.navigationItem setTitle:@"发布"];
     [self presentViewController:publishVC animated:YES completion:nil];
 }

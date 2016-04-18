@@ -71,11 +71,11 @@
                     <exclude reference="Oaq-Ss-Rzd"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="a1M-Jb-7zl"/>
-                    <exclude reference="dx4-Bb-3SL"/>
                     <exclude reference="63L-hU-qqB"/>
                     <exclude reference="Np6-kp-Ctp"/>
                     <exclude reference="ro5-AW-zFN"/>
+                    <exclude reference="a1M-Jb-7zl"/>
+                    <exclude reference="dx4-Bb-3SL"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -84,11 +84,11 @@
                     <include reference="Oaq-Ss-Rzd"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="a1M-Jb-7zl"/>
-                    <include reference="dx4-Bb-3SL"/>
                     <include reference="63L-hU-qqB"/>
                     <include reference="Np6-kp-Ctp"/>
                     <include reference="ro5-AW-zFN"/>
+                    <include reference="a1M-Jb-7zl"/>
+                    <include reference="dx4-Bb-3SL"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="269.5" y="271.5"/>

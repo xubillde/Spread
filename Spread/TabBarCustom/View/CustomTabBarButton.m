@@ -7,10 +7,10 @@
 //
 
 #import "CustomTabBarButton.h"
-#import "PublishController.h"
 #import "XWMenuPopView.h"
 #import "AppDelegate.h"
 #import "CustomTabBarController.h"
+
 
 @interface CustomTabBarButton ()
 

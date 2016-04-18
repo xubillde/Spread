@@ -7,6 +7,7 @@
 //
 
 #import "AboutSelfController.h"
+#import "AdviceFeedbackController.h"
 
 @interface AboutSelfController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -69,7 +70,7 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     //初始化cell数据!
-    if (indexPath.row == 1) {
+    if (indexPath.row == 0) {
         [cell.textLabel setText:@"用户协议"];
     }else{
         [cell.textLabel setText:@"意见反馈"];
@@ -78,6 +79,15 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"点击cell");
+    if (indexPath.row == 1) {
+        AdviceFeedbackController *adviceFeedbackVC = [[AdviceFeedbackController alloc] init];
+        [adviceFeedbackVC.navigationItem setTitle:@"意见反馈"];
+        [adviceFeedbackVC setHidesBottomBarWhenPushed:YES];
+        [self.navigationController pushViewController:adviceFeedbackVC animated:YES];
+    }
+}
 
 
 
