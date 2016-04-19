@@ -15,6 +15,7 @@
 #import "AboutSelfController.h"
 #import "XWBlueToothController.h"
 #import "XWAlertController.h"
+#import "LoginController.h"
 
 #define ORIGINAL_MAX_WIDTH 640.0f
 
@@ -159,7 +160,10 @@
         
     }else{
         //第一模块
-        
+        LoginController *loginVC = [[LoginController alloc] init];
+        [self presentViewController:loginVC animated:YES completion:nil];
+//        [loginVC setHidesBottomBarWhenPushed:YES];
+//        [self.navigationController pushViewController:loginVC animated:YES];
     }
 }
 

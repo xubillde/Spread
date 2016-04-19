@@ -148,12 +148,6 @@
                             <exclude reference="dmr-ls-8Wb"/>
                             <exclude reference="BB8-eR-UCP"/>
                             <exclude reference="hUV-0s-7rD"/>
-                            <exclude reference="SJ9-iD-7ba"/>
-                            <exclude reference="lWl-jb-a8M"/>
-                            <exclude reference="HSF-ZJ-GcY"/>
-                            <exclude reference="Yk4-6A-rSX"/>
-                            <exclude reference="f93-Fm-2so"/>
-                            <exclude reference="hrO-PF-Yjx"/>
                             <exclude reference="6pD-qI-SoJ"/>
                             <exclude reference="8XF-EH-kC6"/>
                             <exclude reference="IcA-P6-m4S"/>
@@ -165,6 +159,12 @@
                             <exclude reference="8JO-Ci-sNR"/>
                             <exclude reference="9kA-v6-iFI"/>
                             <exclude reference="HM2-eb-K4x"/>
+                            <exclude reference="SJ9-iD-7ba"/>
+                            <exclude reference="lWl-jb-a8M"/>
+                            <exclude reference="HSF-ZJ-GcY"/>
+                            <exclude reference="Yk4-6A-rSX"/>
+                            <exclude reference="f93-Fm-2so"/>
+                            <exclude reference="hrO-PF-Yjx"/>
                         </mask>
                     </variation>
                     <variation key="widthClass=compact">
@@ -179,12 +179,6 @@
                             <include reference="dmr-ls-8Wb"/>
                             <include reference="BB8-eR-UCP"/>
                             <include reference="hUV-0s-7rD"/>
-                            <include reference="SJ9-iD-7ba"/>
-                            <include reference="lWl-jb-a8M"/>
-                            <include reference="HSF-ZJ-GcY"/>
-                            <include reference="Yk4-6A-rSX"/>
-                            <include reference="f93-Fm-2so"/>
-                            <include reference="hrO-PF-Yjx"/>
                             <include reference="6pD-qI-SoJ"/>
                             <include reference="8XF-EH-kC6"/>
                             <include reference="IcA-P6-m4S"/>
@@ -196,6 +190,12 @@
                             <include reference="8JO-Ci-sNR"/>
                             <include reference="9kA-v6-iFI"/>
                             <include reference="HM2-eb-K4x"/>
+                            <include reference="SJ9-iD-7ba"/>
+                            <include reference="lWl-jb-a8M"/>
+                            <include reference="HSF-ZJ-GcY"/>
+                            <include reference="Yk4-6A-rSX"/>
+                            <include reference="f93-Fm-2so"/>
+                            <include reference="hrO-PF-Yjx"/>
                         </mask>
                     </variation>
                 </view>
@@ -239,15 +239,15 @@
                     <exclude reference="hmD-PJ-qTE"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Bo5-GX-Wdl"/>
-                    <exclude reference="OSS-b5-X3E"/>
-                    <exclude reference="sPc-lo-xkV"/>
-                    <exclude reference="C0b-BY-XUX"/>
-                    <exclude reference="ImS-nQ-cK3"/>
                     <exclude reference="AL7-nY-qpb"/>
                     <exclude reference="ZK8-Qv-d92"/>
                     <exclude reference="tM8-Cm-JlB"/>
                     <exclude reference="vT2-2M-8EL"/>
+                    <exclude reference="C0b-BY-XUX"/>
+                    <exclude reference="ImS-nQ-cK3"/>
+                    <exclude reference="Bo5-GX-Wdl"/>
+                    <exclude reference="OSS-b5-X3E"/>
+                    <exclude reference="sPc-lo-xkV"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -257,15 +257,15 @@
                     <include reference="hmD-PJ-qTE"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Bo5-GX-Wdl"/>
-                    <include reference="OSS-b5-X3E"/>
-                    <include reference="sPc-lo-xkV"/>
-                    <include reference="C0b-BY-XUX"/>
-                    <include reference="ImS-nQ-cK3"/>
                     <include reference="AL7-nY-qpb"/>
                     <include reference="ZK8-Qv-d92"/>
                     <include reference="tM8-Cm-JlB"/>
                     <include reference="vT2-2M-8EL"/>
+                    <include reference="C0b-BY-XUX"/>
+                    <include reference="ImS-nQ-cK3"/>
+                    <include reference="Bo5-GX-Wdl"/>
+                    <include reference="OSS-b5-X3E"/>
+                    <include reference="sPc-lo-xkV"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="239.5" y="271.5"/>
