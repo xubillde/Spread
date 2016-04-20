@@ -161,6 +161,9 @@
     }else{
         //第一模块
         LoginController *loginVC = [[LoginController alloc] init];
+//        [loginVC setHidesBottomBarWhenPushed:YES];
+//        [loginVC.navigationController setNavigationBarHidden:YES];
+//        UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
         [self presentViewController:loginVC animated:YES completion:nil];
 //        [loginVC setHidesBottomBarWhenPushed:YES];
 //        [self.navigationController pushViewController:loginVC animated:YES];

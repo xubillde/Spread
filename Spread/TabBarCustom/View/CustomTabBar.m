@@ -44,7 +44,7 @@
     
     NSInteger buttonIndex = 0;
     
-    self.pulishButton.center = CGPointMake(barWidth * 0.5, barHeight * 0.3);
+    self.pulishButton.center = CGPointMake(barWidth * 0.5, barHeight * 0.5);
     
     for (UIView *view in self.subviews) {
         
@@ -54,7 +54,6 @@
         if ([viewClass isEqualToString:@"UITabBarButton"]){
             
             CGFloat buttonX = buttonIndex * buttonW;
-            
             //右边两个按钮
             if (buttonIndex >= 2) {
                 buttonX += buttonW;

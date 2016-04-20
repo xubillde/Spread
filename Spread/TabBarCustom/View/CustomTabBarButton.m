@@ -21,6 +21,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    
     // 控件大小,间距大小
     CGFloat const imageViewEdge   = self.bounds.size.width * 0.6;
     CGFloat const centerOfView    = self.bounds.size.width * 0.5;
@@ -57,11 +58,11 @@
 //初始化方法
 +(instancetype)shareCustomTabBarButton{
     CustomTabBarButton *button = [[CustomTabBarButton alloc] init];
-    [button setImage:[UIImage imageNamed:@"post_normal"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
     //可以自定义
     [button setTitle:@"发布" forState:UIControlStateNormal];
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-    button.titleLabel.font = [UIFont systemFontOfSize:9.5];
+    button.titleLabel.font = [UIFont systemFontOfSize:8.0];
     //UIButton大小能够自适应titlelabel内的字体或图片
     [button sizeToFit];
     [button addTarget:button action:@selector(clickPublish) forControlEvents:UIControlEventTouchUpInside];

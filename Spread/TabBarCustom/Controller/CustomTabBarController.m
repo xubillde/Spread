@@ -32,26 +32,25 @@
 }
 
 //子视图
-/** 雷达视图 */
-@property (nonatomic, strong) RadarController *radarVC;
+/** 发现页 */
+@property (nonatomic, strong) DiscoverMainController *discoverMainVC;
 
-/** 热度视图 */
+/** 新闻视图 */
 @property (nonatomic, strong) RankingController *rankingVC;
 
-/** 聊天视图(迭代) */
-@property (nonatomic, strong) ChattingController *chattingVC;
-
-/** 轨迹视图 */
-@property (nonatomic, strong) LocusController *locusVC;
+/** 雷达视图 */
+@property (nonatomic, strong) RadarController *radarVC;
 
 /** 个人信息视图 */
 @property (nonatomic, strong) PersonController *personVC;
 
-/** 发现页 */
-@property (nonatomic, strong) DiscoverMainController *discoverMainVC;
 
-//@property (nonatomic, strong) XWMenuPopView *menuPopView;
-
+////子视图
+///** 聊天视图(迭代) */
+//@property (nonatomic, strong) ChattingController *chattingVC;
+//
+///** 轨迹视图 */
+//@property (nonatomic, strong) LocusController *locusVC;
 
 @end
 
@@ -83,36 +82,35 @@ static id _instance;
 }
 
 #pragma mark - 懒加载
+//寻觅
 -(RadarController *)radarVC{
     if (_radarVC == nil) {
         _radarVC = [[RadarController alloc] init];
     }
     return _radarVC;
 }
+//天下事
 -(RankingController *)rankingVC{
     if (_rankingVC == nil) {
         _rankingVC = [[RankingController alloc] init];
     }
     return _rankingVC;
 }
--(LocusController *)locusVC{
-    if (_locusVC == nil) {
-        _locusVC = [[LocusController alloc] init];
-    }
-    return _locusVC;
-}
+//个人信息
 -(PersonController *)personVC{
     if (_personVC == nil) {
         _personVC = [[PersonController alloc] init];
     }
     return _personVC;
 }
+//发现
 -(DiscoverMainController *)discoverMainVC{
     if (_discoverMainVC == nil) {
         _discoverMainVC = [[DiscoverMainController alloc] init];
     }
     return _discoverMainVC;
 }
+
 #pragma mark - 视图
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -125,13 +123,13 @@ static id _instance;
     [self setUpChildViewControllers];
     
     //tabbar背景颜色 -> 颜色转图片
-    [[UITabBar appearance] setBackgroundImage:[self imageWithColor:[UIColor whiteColor]]];
+    [[UITabBar appearance] setBackgroundImage:[UIImage imageNamed:@"tabbarBg"]];
     
     //去除tabbar 自带的顶部阴影
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
     
     //设置导航控制器颜色
-    [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:[UIColor yellowColor]] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:ColorWithRGB(255, 209, 0)] forBarMetrics:UIBarMetricsDefault];
     
     // 处理tabBar，使用自定义 tabBar 添加 发布按钮
     [self setUpTabBar];
@@ -183,43 +181,54 @@ static id _instance;
         
         //设置顶部title
         [self.discoverMainVC.tabBarItem setTitle:@"发现"];
-        [self.rankingVC.tabBarItem setTitle:@"新闻"];
+        [self.rankingVC.tabBarItem setTitle:@"天下事"];
         [self.radarVC.tabBarItem setTitle:@"寻人"];
         [self.personVC.tabBarItem setTitle:@"个人信息"];
         
         [self.discoverMainVC.navigationItem setTitle:@"发现"];
-        [self.rankingVC.navigationItem setTitle:@"新闻"];
+        [self.rankingVC.navigationItem setTitle:@"天下事"];
         [self.radarVC.navigationItem setTitle:@"寻人"];
         [self.personVC.navigationItem setTitle:@"个人信息"];
         
         //设置图片
-        [self.radarVC.tabBarItem setImage:[UIImage imageNamed:@"home_normal"]];
-        [self.rankingVC.tabBarItem setImage:[UIImage imageNamed:@"mycity_normal"]];
-        [self.discoverMainVC.tabBarItem setImage:[UIImage imageNamed:@"message_normal"]];
-        [self.personVC.tabBarItem setImage:[UIImage imageNamed:@"account_normal"]];
+        [self.discoverMainVC.tabBarItem setImage:[UIImage imageNamed:@"1"]];
+        [self.rankingVC.tabBarItem setImage:[UIImage imageNamed:@"2"]];
+        [self.radarVC.tabBarItem setImage:[UIImage imageNamed:@"search"]];
+        [self.personVC.tabBarItem setImage:[UIImage imageNamed:@"55"]];
         
         //设置高亮图片
         //渲染模式 - UIImageRenderingModeAlwaysOriginal 始终绘制图片原始状态，不使用Tint Color。
-        UIImage *radarVCSelectedImage = [UIImage imageNamed:@"home_highlight"];
-        radarVCSelectedImage = [radarVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        self.radarVC.tabBarItem.selectedImage = radarVCSelectedImage;
+        UIImage *discoverVCSelectedImage = [UIImage imageNamed:@"11"];
+        discoverVCSelectedImage = [discoverVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.discoverMainVC.tabBarItem.selectedImage = discoverVCSelectedImage;
         
-        UIImage *rankingVCSelectedImage = [UIImage imageNamed:@"mycity_highlight"];
+        
+        UIImage *rankingVCSelectedImage = [UIImage imageNamed:@"22"];
         rankingVCSelectedImage = [rankingVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         self.rankingVC.tabBarItem.selectedImage = rankingVCSelectedImage;
         
-        UIImage *chattingVCSelectedImage = [UIImage imageNamed:@"message_highlight"];
-        chattingVCSelectedImage = [chattingVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-        self.discoverMainVC.tabBarItem.selectedImage = chattingVCSelectedImage;
+        UIImage *radarVCSelectedImage = [UIImage imageNamed:@"33"];
+        radarVCSelectedImage = [radarVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        self.radarVC.tabBarItem.selectedImage = radarVCSelectedImage;
         
-        UIImage *personVCSelectedImage = [UIImage imageNamed:@"account_highlight"];
+        UIImage *personVCSelectedImage = [UIImage imageNamed:@"4"];
         personVCSelectedImage = [personVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         self.personVC.tabBarItem.selectedImage = personVCSelectedImage;
         
+        
+        
+//        UIImage *chattingVCSelectedImage = [UIImage imageNamed:@"message_highlight"];
+//        chattingVCSelectedImage = [chattingVCSelectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//        self.discoverMainVC.tabBarItem.selectedImage = chattingVCSelectedImage;
+        
         //使用navigation容器
-        UINavigationController *radarNav = [[UINavigationController alloc] initWithRootViewController:self.radarVC];
-        UINavigationController *rankingNav = [[UINavigationController alloc] initWithRootViewController:self.rankingVC];
+        //发现
         UINavigationController *discoverMainNav = [[UINavigationController alloc] initWithRootViewController:self.discoverMainVC];
+        //天下事
+        UINavigationController *rankingNav = [[UINavigationController alloc] initWithRootViewController:self.rankingVC];
+        //寻觅
+        UINavigationController *radarNav = [[UINavigationController alloc] initWithRootViewController:self.radarVC];
+        //个人信息
         UINavigationController *personNav = [[UINavigationController alloc] initWithRootViewController:self.personVC];
         
         self.viewControllers = @[discoverMainNav,rankingNav,radarNav,personNav];
